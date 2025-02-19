@@ -5,7 +5,7 @@ This guide explains how to configure single sign-on (SSO) support for NetBox usi
 ## Okta Configuration
 
 !!! tip "Okta developer account"
-    Okta offers free developer accounts at <https://developer.okta.com/>.
+    Okta offers free developer accounts at https://developer.okta.com/.
 
 ### 1. Create a test user (optional)
 
