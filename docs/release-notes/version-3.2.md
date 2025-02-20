@@ -24,7 +24,7 @@
 
 ### Enhancements
 
-* [#9062](https://github.com/netbox-community/netbox/issues/9062) - Add/edit {module} substitution to help text for component template name
+* [#9062](https://github.com/netbox-community/netbox/issues/9062) - Add/edit \{module} substitution to help text for component template name
 * [#9637](https://github.com/netbox-community/netbox/issues/9637) - Add site group field to rack reservation form
 * [#9762](https://github.com/netbox-community/netbox/issues/9762) - Add `nat_outside` column to the IPAddress table
 * [#9825](https://github.com/netbox-community/netbox/issues/9825) - Add contacts column to virtual machines table
@@ -242,15 +242,11 @@
 !!! warning "Python 3.8 or Later Required"
     NetBox v3.2 requires Python 3.8 or later.
 
-:::warning Deletion of Legacy Data
+!!! warning "Deletion of Legacy Data"
+    This release includes a database migration that will remove the `asn`, `contact_name`, `contact_phone`, and `contact_email` fields from the site model. (These fields have been superseded by the ASN and contact models introduced in NetBox v3.1.) To protect against the accidental destruction of data, the upgrade process **will fail** if any sites still have data in any of these fields. To bypass this safeguard, set the `NETBOX_DELETE_LEGACY_DATA` environment variable when running the upgrade script, which will permit the destruction of legacy data.
 
-This release includes a database migration that will remove the `asn`, `contact_name`, `contact_phone`, and `contact_email` fields from the site model. (These fields have been superseded by the ASN and contact models introduced in NetBox v3.1.) To protect against the accidental destruction of data, the upgrade process **will fail** if any sites still have data in any of these fields. To bypass this safeguard, set the `NETBOX_DELETE_LEGACY_DATA` environment variable when running the upgrade script, which will permit the destruction of legacy data.
-:::
-
-:::tip Migration Scripts
-
-A set of [migration scripts](https://github.com/netbox-community/migration-scripts) is available to assist with the migration of legacy site data.
-:::
+!!! tip "Migration Scripts"
+    A set of [migration scripts](https://github.com/netbox-community/migration-scripts) is available to assist with the migration of legacy site data.
 
 ### Breaking Changes
 
