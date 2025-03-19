@@ -28,6 +28,7 @@ from utilities.forms import BulkRenameForm, ConfirmationForm, restrict_form_fiel
 from utilities.forms.bulk_import import BulkImportForm
 from utilities.htmx import htmx_partial
 from utilities.permissions import get_permission_for_model
+from utilities.query import reapply_model_ordering
 from utilities.views import GetReturnURLMixin, get_viewname
 from .base import BaseMultiObjectView
 from .mixins import ActionsMixin, TableMixin
@@ -124,6 +125,10 @@ class ObjectListView(BaseMultiObjectView, ActionsMixin, TableMixin):
     #
     # Request handlers
     #
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return reapply_model_ordering(qs)
 
     def get(self, request):
         """

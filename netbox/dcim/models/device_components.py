@@ -184,8 +184,11 @@ class CabledObjectModel(models.Model):
     @cached_property
     def link_peers(self):
         if self.cable:
-            peers = self.cable.terminations.exclude(cable_end=self.cable_end).prefetch_related('termination')
-            return [peer.termination for peer in peers]
+            return [
+                peer.termination
+                for peer in self.cable.terminations.all()
+                if peer.cable_end != self.cable_end
+            ]
         return []
 
     @property
@@ -934,6 +937,8 @@ class Interface(ModularComponentModel, BaseInterface, CabledObjectModel, PathEnd
                 raise ValidationError({'rf_channel_width': _("Cannot specify custom width with channel selected.")})
 
         # VLAN validation
+        if not self.mode and self.untagged_vlan:
+            raise ValidationError({'untagged_vlan': _("Interface mode does not support an untagged vlan.")})
 
         # Validate untagged VLAN
         if self.untagged_vlan and self.untagged_vlan.site not in [self.device.site, None]:

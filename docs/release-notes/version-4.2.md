@@ -1,5 +1,63 @@
 # NetBox v4.2
 
+## v4.2.5 (2025-03-06)
+
+### Enhancements
+
+* [#17357](https://github.com/netbox-community/netbox/issues/17357) - Use VirtualChassis name as fallback for unnamed devices
+* [#17542](https://github.com/netbox-community/netbox/issues/17542) - Add contact assignments to VPN tunnels
+* [#17944](https://github.com/netbox-community/netbox/issues/17944) - Allow script inputs to be filtered on ObjectVar and MultiObjectVar selections
+* [#18024](https://github.com/netbox-community/netbox/issues/18024) - Add permalink URL pattern to match a custom script by module and class name
+* [#18095](https://github.com/netbox-community/netbox/issues/18095) - Ensure contacts are shown on children of objects with contacts
+* [#18141](https://github.com/netbox-community/netbox/issues/18141) - Support "Quick Add" for plugins
+* [#18403](https://github.com/netbox-community/netbox/issues/18403) - Improve performance of job list views
+* [#18693](https://github.com/netbox-community/netbox/issues/18693) - Support setting VLAN translation on bulk edit of interfaces
+* [#18772](https://github.com/netbox-community/netbox/issues/18772) - Add "type" filter for virtual circuits
+* [#18774](https://github.com/netbox-community/netbox/issues/18774) - Add tooltip preview of tag descriptions when hovering over tags
+
+### Bug Fixes
+
+* [#15016](https://github.com/netbox-community/netbox/issues/15016) - Prevent AssertionError when adding multiple devices "mid-span" in a cable trace
+* [#15924](https://github.com/netbox-community/netbox/issues/15924) - Prevent setting tagged VLANs on interfaces with mode: tagged-all
+* [#17488](https://github.com/netbox-community/netbox/issues/17488) - Ensure VLANGroup.vid_ranges shows up in API results
+* [#17709](https://github.com/netbox-community/netbox/issues/17709) - Allow primary key for nested models in OpenAPI request schemas
+* [#17796](https://github.com/netbox-community/netbox/issues/17796) - Fix IndexError on "Create & Add Another" operation on custom field choices
+* [#18605](https://github.com/netbox-community/netbox/issues/18605) - Limit VLAN selection dropdown to choices appropriate to site
+* [#18722](https://github.com/netbox-community/netbox/issues/18722) - Improve UI feedback on failed script execution
+* [#18729](https://github.com/netbox-community/netbox/issues/18729) - Fix unpredictable ordering on querysets with annotations/groupings
+* [#18753](https://github.com/netbox-community/netbox/issues/18753) - Prevent webhooks from being triggered on a script dry-run
+* [#18758](https://github.com/netbox-community/netbox/issues/18758) - Fix FieldError when sorting by account count field in providers list
+* [#18768](https://github.com/netbox-community/netbox/issues/18768) - Fix removing a secondary MAC address from an interface
+
+---
+
+## v4.2.4 (2025-02-21)
+
+### Enhancements
+
+* [#17309](https://github.com/netbox-community/netbox/issues/17309) - Omit empty counts in related object tables
+* [#18277](https://github.com/netbox-community/netbox/issues/18277) - Improve multi-table inheritance in serialization of change-logged models
+* [#18286](https://github.com/netbox-community/netbox/issues/18286) - Add more job duration choices
+* [#18357](https://github.com/netbox-community/netbox/issues/18357) - Display author name in plugin list for locally installed plugins
+* [#18408](https://github.com/netbox-community/netbox/issues/18408) - Add Paused status for virtual machines
+* [#18584](https://github.com/netbox-community/netbox/issues/18584) - Add rack type column to manufacturer list
+
+### Bug Fixes
+
+* [#17436](https://github.com/netbox-community/netbox/issues/17436) - Fix {module} replacement in module bays
+* [#18013](https://github.com/netbox-community/netbox/issues/18013) - Limit object type to selected object in change log filter
+* [#18241](https://github.com/netbox-community/netbox/issues/18241) - Default logging level of custom scripts changed to INFO
+* [#18247](https://github.com/netbox-community/netbox/issues/18247) - Fix visibility of disabled cable paths in dark mode
+* [#18480](https://github.com/netbox-community/netbox/issues/18480) - Clean data passed to script in runscript command
+* [#18555](https://github.com/netbox-community/netbox/issues/18555) - Add default get_absolute_url method to plugin models
+* [#18585](https://github.com/netbox-community/netbox/issues/18585) - Fix filtering circuits by location
+* [#18593](https://github.com/netbox-community/netbox/issues/18593) - Fix "Create & Add Another" IP Address workflow
+* [#18594](https://github.com/netbox-community/netbox/issues/18594) - Enable sorting by ASN count on site and provider lists
+* [#18619](https://github.com/netbox-community/netbox/issues/18619) - Ensure shift-click selection selects only visible list items
+* [#18674](https://github.com/netbox-community/netbox/issues/18674) - Preserve form values when selecting speed on circuit termination
+
+---
+
 ## v4.2.3 (2025-02-04)
 
 ### Enhancements
