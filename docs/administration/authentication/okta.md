@@ -19,8 +19,8 @@ Within the Okta administration dashboard, navigate to  **Applications > Applicat
 
 On the next page, give the app integration a name (e.g. "NetBox") and specify the sign-in and sign-out URIs. These URIs should follow the formats below:
 
-* Sign-in URI: `https://{netbox}/oauth/complete/okta-openidconnect/`
-* Sign-out URI: `https://{netbox}/oauth/disconnect/okta-openidconnect/`
+* Sign-in URI: `https://\{netbox\}/oauth/complete/okta-openidconnect/`
+* Sign-out URI: `https://\{netbox\}/oauth/disconnect/okta-openidconnect/`
 
 ![Web app integration](../../media/authentication/okta_web_app_integration.png)
 
@@ -42,9 +42,9 @@ Enter the following configuration parameters in `configuration.py`, substituting
 
 ```python
 REMOTE_AUTH_BACKEND = 'social_core.backends.okta_openidconnect.OktaOpenIdConnect'
-SOCIAL_AUTH_OKTA_OPENIDCONNECT_KEY = '{Client ID}'
-SOCIAL_AUTH_OKTA_OPENIDCONNECT_SECRET = '{Client secret}'
-SOCIAL_AUTH_OKTA_OPENIDCONNECT_API_URL = 'https://{Okta domain}/oauth2/'
+SOCIAL_AUTH_OKTA_OPENIDCONNECT_KEY = '\{Client ID\}'
+SOCIAL_AUTH_OKTA_OPENIDCONNECT_SECRET = '\{Client secret\}'
+SOCIAL_AUTH_OKTA_OPENIDCONNECT_API_URL = 'https://\{Okta domain\}/oauth2/'
 ```
 
 ### 2. Restart NetBox

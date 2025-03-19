@@ -329,7 +329,7 @@ Tags may now be restricted to use with designated object types. Tags that have n
 * Introduced the following endpoints:
     * `/api/extras/bookmarks/`
     * `/api/extras/custom-field-choice-sets/`
-* Added the `/api/extras/custom-fields/{id}/choices/` endpoint for select and multi-select custom fields
+* Added the `/api/extras/custom-fields/\{id\}/choices/` endpoint for select and multi-select custom fields
 * dcim.Device
     * Renamed `device_role` to `device`. Added a read-only `device_role` field for limited backward compatibility.
     * Added the `latitude` and `longitude` fields (for GPS coordinates)

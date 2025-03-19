@@ -49,8 +49,8 @@ Enter the following configuration parameters in `configuration.py`, substituting
 
 ```python
 REMOTE_AUTH_BACKEND = 'social_core.backends.azuread.AzureADOAuth2'
-SOCIAL_AUTH_AZUREAD_OAUTH2_KEY = '{APPLICATION_ID}'
-SOCIAL_AUTH_AZUREAD_OAUTH2_SECRET = '{SECRET_VALUE}'
+SOCIAL_AUTH_AZUREAD_OAUTH2_KEY = '\{APPLICATION_ID\}'
+SOCIAL_AUTH_AZUREAD_OAUTH2_SECRET = '\{SECRET_VALUE\}'
 ```
 
 ### 2. Restart NetBox
