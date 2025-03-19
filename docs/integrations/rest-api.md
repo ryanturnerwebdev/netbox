@@ -333,7 +333,7 @@ The response will return devices 1 through 100. The URL provided in the `next` a
 
 The maximum number of objects that can be returned is limited by the [`MAX_PAGE_SIZE`](../configuration/miscellaneous.md#max_page_size) configuration parameter, which is 1000 by default. Setting this to `0` or `None` will remove the maximum limit. An API consumer can then pass `?limit=0` to retrieve _all_ matching objects with a single request.
 
-!!! warning
+:::warning
     Disabling the page size limit introduces a potential for very resource-intensive requests, since one API request can effectively retrieve an entire table from the database.
 
 ## Interacting with Objects
@@ -597,7 +597,7 @@ Each API token can optionally be restricted by client IP address. If one or more
 
 It is possible to provision authentication tokens for other users via the REST API. To do, so the requesting user must have the `users.grant_token` permission assigned. While all users have inherent permission by default to create their own tokens, this permission is required to enable the creation of tokens for other users.
 
-!!! warning "Exercise Caution"
+:::warning "Exercise Caution"
     The ability to create tokens on behalf of other users enables the requestor to access the created token. This ability is intended e.g. for the provisioning of tokens by automated services, and should be used with extreme caution to avoid a security compromise.
 
 ### Authenticating to the API

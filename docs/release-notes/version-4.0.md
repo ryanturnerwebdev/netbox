@@ -223,7 +223,7 @@
 
 ## v4.0.2 (2024-05-14)
 
-!!! warning "Important"
+:::warning "Important"
     This release includes an important security fix, and is a strongly recommended update for all users. More details will follow.
 
 ### Enhancements
@@ -399,7 +399,7 @@ The legacy admin user interface is now disabled by default, and the few remainin
 * [#15277](https://github.com/netbox-community/netbox/issues/15277) - Replace references to ContentType without ObjectType proxy model & standardize field names
 * [#15292](https://github.com/netbox-community/netbox/issues/15292) - Remove obsolete `device_role` attribute from Device model (this field was renamed to `role` in v3.6)
 * [#15357](https://github.com/netbox-community/netbox/issues/15357) - The `object_type` field on the CustomField model has been renamed to `related_object_type` to avoid confusion with its `object_types` field
-* [#15401](https://github.com/netbox-community/netbox/issues/15401) - PostgreSQL indexes and sequence tables for the relocated L2VPN models (see [#14311](https://github.com/netbox-community/netbox/issues/14311)) have been renamed 
+* [#15401](https://github.com/netbox-community/netbox/issues/15401) - PostgreSQL indexes and sequence tables for the relocated L2VPN models (see [#14311](https://github.com/netbox-community/netbox/issues/14311)) have been renamed
 * [#15462](https://github.com/netbox-community/netbox/issues/15462) - Relocate resources from the `utilities.utils` module
 * [#15464](https://github.com/netbox-community/netbox/issues/15464) - The many-to-many relationships for ObjectPermission are now defined on the custom User and Group models
 * [#15736](https://github.com/netbox-community/netbox/issues/15736) - Remove obsolete `annotated_date` template filter & `annotated_now` template tag

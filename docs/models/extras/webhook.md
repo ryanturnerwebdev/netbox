@@ -68,7 +68,7 @@ A set of [prescribed conditions](../../reference/conditions.md) against which th
 
 Controls whether validation of the receiver's SSL certificate is enforced when HTTPS is used.
 
-!!! warning
+:::warning
     Disabling this can expose your webhooks to man-in-the-middle attacks.
 
 ### CA File Path

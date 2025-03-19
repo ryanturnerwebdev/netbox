@@ -82,5 +82,5 @@ Data from the higher-weight context overwrites conflicting data from the lower-w
 
 Devices and virtual machines may also have a local context data defined. This local context will _always_ take precedence over any separate config context objects which apply to the device/VM. This is useful in situations where we need to call out a specific deviation in the data for a particular object.
 
-!!! warning
+:::warning
     If you find that you're routinely defining local context data for many individual devices or virtual machines, [custom fields](./customization.md#custom-fields) may offer a more effective solution.

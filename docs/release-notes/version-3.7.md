@@ -45,7 +45,7 @@
 
 ## v3.7.6 (2024-04-22)
 
-!!! warning
+:::warning
     If remote authentication is in use with Gunicorn v22.0 or later, it may be necessary to configure Gunicorn's [`header_map`](https://docs.gunicorn.org/en/stable/settings.html#header-map) setting to preserve authentication headers.
 
 ### Enhancements

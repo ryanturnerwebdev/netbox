@@ -118,7 +118,7 @@
 
 ### Enhancements
 
-* [#6879](https://github.com/netbox-community/netbox/issues/6879) - Improve ability to toggle images/labels in rack elevations 
+* [#6879](https://github.com/netbox-community/netbox/issues/6879) - Improve ability to toggle images/labels in rack elevations
 * [#7485](https://github.com/netbox-community/netbox/issues/7485) - Add USB micro AB type
 
 ### Bug Fixes
@@ -290,7 +290,7 @@
 
 ## v3.0.0 (2021-08-30)
 
-!!! warning "Existing Deployments Must Upgrade from v2.11"
+:::warning "Existing Deployments Must Upgrade from v2.11"
     Upgrading an existing NetBox deployment to version 3.0 **must** be done from version 2.11.0 or later. If attempting to upgrade a deployment of NetBox v2.10 or earlier, first upgrade to a NetBox v2.11 release, and then upgrade from v2.11 to v3.0. This will avoid any problems with the database migration optimizations implemented in version 3.0. (This is not necessary for _new_ installations.)
 
 ### Breaking Changes

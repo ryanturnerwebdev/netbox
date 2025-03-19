@@ -9,7 +9,7 @@ Changes can be applied individually via the `apply()` method, however it is reco
 
 ## Fields
 
-!!! warning
+:::warning
     Staged changes are not typically created or manipulated directly, but rather effected through the use of the [`checkout()`](../../plugins/development/staged-changes.md) context manager.
 
 ### Branch

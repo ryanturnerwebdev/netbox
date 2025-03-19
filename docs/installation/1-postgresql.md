@@ -2,7 +2,7 @@
 
 This section entails the installation and configuration of a local PostgreSQL database. If you already have a PostgreSQL database service in place, skip to [the next section](2-redis.md).
 
-!!! warning "PostgreSQL 13 or later required"
+:::warning "PostgreSQL 13 or later required"
     NetBox requires PostgreSQL 13 or later. Please note that MySQL and other relational databases are **not** supported.
 
 ## Installation

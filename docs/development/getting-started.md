@@ -199,5 +199,5 @@ Once your fork has the new commit, submit a [pull request](https://github.com/ne
 
 Once submitted, a maintainer will review your pull request and either merge it or request changes. If changes are needed, you can make them via new commits to your fork: The pull request will update automatically.
 
-!!! warning
+:::warning
     Remember, pull requests are permitted only for **accepted** issues. If an issue you want to work on hasn't been approved by a maintainer yet, it's best to avoid risking your time and effort on a change that might not be accepted. (The one exception to this is trivial changes to the documentation or other non-critical resources.)

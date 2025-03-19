@@ -19,7 +19,7 @@ While the provided configuration should suffice for most initial installations, 
 
 We'll use systemd to control both gunicorn and NetBox's background worker process. First, copy `contrib/netbox.service` and `contrib/netbox-rq.service` to the `/etc/systemd/system/` directory and reload the systemd daemon.
 
-!!! warning "Check user & group assignment"
+:::warning "Check user & group assignment"
     The stock service configuration files packaged with NetBox assume that the service will run with the `netbox` user and group names. If these differ on your installation, be sure to update the service files accordingly.
 
 ```no-highlight

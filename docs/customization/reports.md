@@ -1,6 +1,6 @@
 # NetBox Reports
 
-!!! warning
+:::warning
     Reports are deprecated beginning with NetBox v4.0, and their functionality has been merged with [custom scripts](./custom-scripts.md). While backward compatibility has been maintained, users are advised to convert legacy reports into custom scripts soon, as support for legacy reports will be removed in a future release.
 
 ## Converting Reports to Scripts

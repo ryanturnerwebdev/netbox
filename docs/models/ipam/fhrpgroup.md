@@ -31,5 +31,5 @@ The type of authentication employed by group nodes, if any.
 
 The shared key used for group authentication, if any.
 
-!!! warning
+:::warning
     The authentication key value is stored in plaintext in NetBox's database. Do not utilize this field if you require encryption at rest for shared keys.

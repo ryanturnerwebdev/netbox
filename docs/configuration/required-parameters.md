@@ -52,7 +52,7 @@ DATABASE = {
 :::note
     NetBox supports all PostgreSQL database options supported by the underlying Django framework. For a complete list of available parameters, please see [the Django documentation](https://docs.djangoproject.com/en/stable/ref/settings/#databases).
 
-!!! warning
+:::warning
     Make sure to use a PostgreSQL-compatible backend for the ENGINE setting. If you don't specify an ENGINE, the default will be django.db.backends.postgresql.
 
 ---
@@ -94,7 +94,7 @@ REDIS = {
 }
 ```
 
-!!! warning
+:::warning
     It is highly recommended to keep the task and cache databases separate. Using the same database number on the
     same Redis instance for both may result in queued background tasks being lost during cache flushing events.
 

@@ -24,7 +24,7 @@ SENTRY_TAGS = {
 }
 ```
 
-!!! warning "Reserved tag prefixes"
+:::warning "Reserved tag prefixes"
     Avoid using any tag names which begin with `netbox.`, as this prefix is reserved by the NetBox application.
 
 ### Testing

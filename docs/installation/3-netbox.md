@@ -6,7 +6,7 @@ This section of the documentation discusses installing and configuring the NetBo
 
 Begin by installing all system packages required by NetBox and its dependencies.
 
-!!! warning "Python 3.10 or later required"
+:::warning "Python 3.10 or later required"
     NetBox supports Python 3.10, 3.11, and 3.12.
 
 === "Ubuntu"
@@ -196,7 +196,7 @@ A simple Python script named `generate_secret_key.py` is provided in the parent 
 python3 ../generate_secret_key.py
 ```
 
-!!! warning "SECRET_KEY values must match"
+:::warning "SECRET_KEY values must match"
     In the case of a highly available installation with multiple web servers, `SECRET_KEY` must be identical among all servers in order to maintain a persistent user session state.
 
 When you have finished modifying the configuration, remember to save the file.
@@ -250,7 +250,7 @@ Once NetBox has been configured, we're ready to proceed with the actual installa
 * Builds the documentation locally (for offline use)
 * Aggregate static resource files on disk
 
-!!! warning
+:::warning
     If you still have a Python virtual environment active from a previous installation step, disable it now by running the `deactivate` command. This will avoid errors on systems where `sudo` has been configured to preserve the user's current environment.
 
 ```no-highlight
@@ -331,7 +331,7 @@ Next, connect to the name or IP of the server (as defined in `ALLOWED_HOSTS`) on
 :::danger "Not for production use"
     The development server is for development and testing purposes only. It is neither performant nor secure enough for production use. **Do not use it in production.**
 
-!!! warning
+:::warning
     If the test service does not run, or you cannot reach the NetBox home page, something has gone wrong. Do not proceed with the rest of this guide until the installation has been corrected.
 
 Type `Ctrl+c` to stop the development server.

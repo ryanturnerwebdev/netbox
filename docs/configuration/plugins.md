@@ -6,7 +6,7 @@ Default: Empty
 
 A list of installed [NetBox plugins](../plugins/index.md) to enable. Plugins will not take effect unless they are listed here.
 
-!!! warning
+:::warning
     Plugins extend NetBox by allowing external code to run with the same access and privileges as NetBox itself. Only install plugins from trusted sources. The NetBox maintainers make absolutely no guarantees about the integrity or security of your installation with plugins enabled.
 
 ---
@@ -32,4 +32,3 @@ PLUGINS_CONFIG = {
 Note that a plugin must be listed in `PLUGINS` for its configuration to take effect.
 
 ---
-

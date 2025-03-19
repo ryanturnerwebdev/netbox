@@ -62,7 +62,7 @@ NetBox provides several generic view classes (documented below) to facilitate co
 | `BulkEditView`       | Edit multiple objects                                  |
 | `BulkDeleteView`     | Delete multiple objects                                |
 
-!!! warning
+:::warning
     Please note that only the classes which appear in this documentation are currently supported. Although other classes may be present within the `views.generic` module, they are not yet supported for use by plugins.
 
 #### Example Usage

@@ -248,7 +248,7 @@
 
 ## v3.4.0 (2022-12-14)
 
-!!! warning "PostgreSQL 11 Required"
+:::warning "PostgreSQL 11 Required"
     NetBox v3.4 requires PostgreSQL 11 or later.
 
 ### Breaking Changes

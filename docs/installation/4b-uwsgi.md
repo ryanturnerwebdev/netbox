@@ -41,7 +41,7 @@ sudo systemctl daemon-reload
 
 The reference configuration assumes that gunicorn is in use, so we need to update it. Edit the `netbox.service` file to remove the line beginning with `ExecStart=/opt/netbox/venv/bin/gunicorn` and uncomment the line below it.
 
-!!! warning "Check user & group assignment"
+:::warning "Check user & group assignment"
     The stock service configuration files packaged with NetBox assume that the service will run with the `netbox` user and group names. If these differ on your installation, be sure to update the service files accordingly.
 
 Once the configuration file has been saved, reload the service:

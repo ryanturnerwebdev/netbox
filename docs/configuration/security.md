@@ -125,7 +125,7 @@ DEFAULT_PERMISSIONS = {
 }
 ```
 
-!!! warning
+:::warning
     Setting a custom value for this parameter will overwrite the default permission mapping shown above. If you want to retain the default mapping, be sure to reproduce it in your custom configuration.
 
 ---
@@ -224,7 +224,7 @@ Default: False
 
 If true, all non-HTTPS requests will be automatically redirected to use HTTPS.
 
-!!! warning
+:::warning
     Ensure that your frontend HTTP daemon has been configured to forward the HTTP scheme correctly before enabling this option. An incorrectly configured frontend may result in a looping redirect.
 
 ---

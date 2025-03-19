@@ -26,7 +26,7 @@ Add the field to the model, taking care to address any of the following conditio
 
 Where possible, try to merge related changes into a single migration. For example, if three new fields are being added to different models within an app, these can be expressed in a single migration. You can merge a newly generated migration with an existing one by combining their `operations` lists.
 
-!!! warning "Do not alter existing migrations"
+:::warning "Do not alter existing migrations"
     Migrations can only be merged within a release. Once a new release has been published, its migrations cannot be altered (other than for the purpose of correcting a bug).
 
 ## 3. Add validation logic to `clean()`

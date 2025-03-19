@@ -63,7 +63,7 @@ $ cd netbox/project-static
 $ yarn
 ```
 
-!!! warning "Check Your Working Directory"
+:::warning "Check Your Working Directory"
     You need to be in the `netbox/project-static` directory to run the below `yarn` commands.
 
 ### Updating Dependencies
@@ -143,4 +143,3 @@ You can also run the following commands to automatically fix formatting issues:
 | `yarn format`         | Format TypeScript and Sass (SCSS) source files. |
 | `yarn format:styles`  | Format Sass (SCSS) source files only.           |
 | `yarn format:scripts` | Format TypeScript source files only.            |
-

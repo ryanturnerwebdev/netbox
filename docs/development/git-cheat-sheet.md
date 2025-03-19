@@ -127,7 +127,7 @@ Fast-forward
  create mode 100644 newfile.py
 ```
 
-!!! warning "Avoid Merging Remote Branches"
+:::warning "Avoid Merging Remote Branches"
     You generally want to avoid merging branches that exist on the remote (upstream) repository, namely `main` and `feature`: Merges into these branches should be done via a pull request on GitHub. Only merge branches when it is necessary to consolidate work you've done locally.
 
 ### Show Pending Changes

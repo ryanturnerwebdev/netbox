@@ -6,14 +6,14 @@ This section covers the mechanisms which are available to populate data in NetBo
 
 The simplest and most direct way of populating data in NetBox is to use the object creation forms in the user interface.
 
-!!! warning "Not Ideal for Large Imports"
+:::warning "Not Ideal for Large Imports"
     While convenient and readily accessible to even novice users, creating objects one at a time by manually completing these forms obviously does not scale well. For large imports, you're generally best served by using one of the other methods discussed in this section.
 
 To create a new object in NetBox, find the object type in the navigation menu and click the green "Add" button.
 
 !!! info "Missing Button?"
     If you don't see an "add" button for certain object types, it's likely that your account does not have sufficient permission to create these types. Ask your NetBox administrator to grant the required permissions.
-    
+
     Also note that some object types, such as device components, cannot be created directly from the navigation menu. These must be created within the context of a parent object (such as a parent device).
 
 <!-- TODO: Screenshot -->

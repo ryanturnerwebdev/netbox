@@ -31,7 +31,7 @@ The rest of this document elaborates on each of the items above.
     ```python
     # Translation will not work
     f"There are {count} objects"
-    
+
     # Do this instead
     "There are {count} objects".format(count=count)
     ```
@@ -113,7 +113,7 @@ class CircuitTable(TenancyColumnsMixin, ContactsColumnMixin, NetBoxTable):
 {% endblocktrans %}
 ```
 
-!!! warning
+:::warning
     The `{% blocktrans %}` tag supports only **limited variable replacement**, comparable to the `format()` method on Python strings. It does not permit access to object attributes or the use of other template tags or filters inside it. Ensure that any necessary context is passed as simple variables.
 
 !!! info

@@ -37,7 +37,7 @@ Default: False
 
 Maps to the Sentry SDK's [`send_default_pii`](https://docs.sentry.io/platforms/python/configuration/options/#send-default-pii) parameter. If enabled, certain personally identifiable information (PII) is added.
 
-!!! warning "Sensitive data"
+:::warning "Sensitive data"
     If you enable this option, be aware that sensitive data such as cookies and authentication tokens will be logged.
 
 ---
@@ -53,7 +53,7 @@ SENTRY_TAGS = {
 }
 ```
 
-!!! warning "Reserved tag prefixes"
+:::warning "Reserved tag prefixes"
     Avoid using any tag names which begin with `netbox.`, as this prefix is reserved by the NetBox application.
 
 ---
@@ -64,5 +64,5 @@ Default: 0 (disabled)
 
 The sampling rate for transactions. Must be a value between 0 (disabled) and 1.0 (report on all transactions).
 
-!!! warning "Consider performance implications"
+:::warning "Consider performance implications"
     A high sampling rate for transactions can induce significant performance penalties. If transaction reporting is desired, it is recommended to use a relatively low sample rate of 10% to 20% (0.1 to 0.2).

@@ -87,5 +87,5 @@ urlpatterns = router.urls
 
 This will make the plugin's view accessible at `/api/plugins/my-plugin/my-model/`.
 
-!!! warning
+:::warning
     The examples provided here are intended to serve as a minimal reference implementation only. This documentation does not address authentication, performance, or myriad other concerns that plugin authors may need to address.

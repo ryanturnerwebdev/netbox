@@ -6,7 +6,7 @@ NetBox can generally be upgraded directly to any newer release with no interim s
 
 [![Upgrade paths](../media/installation/upgrade_paths.png)](../media/installation/upgrade_paths.png)
 
-!!! warning "Perform a Backup"
+:::warning "Perform a Backup"
     Always be sure to save a backup of your current NetBox deployment prior to starting the upgrade process.
 
 ## 1. Review the Release Notes
@@ -27,7 +27,7 @@ NetBox requires the following dependencies:
 
 As with the initial installation, you can upgrade NetBox by either downloading the latest release package or by checking out the latest production release from the git repository.
 
-!!! warning
+:::warning
     Use the same method as you used to install NetBox originally.
 
 If you are not sure how NetBox was installed originally, check with this command:
@@ -104,7 +104,7 @@ Once the new code is in place, verify that any optional Python packages required
 sudo ./upgrade.sh
 ```
 
-!!! warning
+:::warning
     If the default version of Python is not at least 3.10, you'll need to pass the path to a supported Python version as an environment variable when calling the upgrade script. For example:
 
     ```no-highlight
@@ -129,7 +129,7 @@ This script performs the following actions:
 
 ## 5. Restart the NetBox Services
 
-!!! warning
+:::warning
     If you are upgrading from an installation that does not use a Python virtual environment (any release prior to v2.7.9), you'll need to update the systemd service files to reference the new Python and gunicorn executables before restarting the services. These are located in `/opt/netbox/venv/bin/`. See the example service files in `/opt/netbox/contrib/` for reference.
 
 Finally, restart the gunicorn and RQ services:

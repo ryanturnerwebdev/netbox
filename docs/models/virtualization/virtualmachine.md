@@ -52,7 +52,7 @@ The amount of running memory provisioned, in megabytes.
 
 The amount of disk storage provisioned, in megabytes.
 
-!!! warning
+:::warning
     This field may be directly modified only on virtual machines which do not define discrete [virtual disks](./virtualdisk.md). Otherwise, it will report the sum of all attached disks.
 
 ### Serial Number

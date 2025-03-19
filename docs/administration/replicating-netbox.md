@@ -28,7 +28,7 @@ pg_dump ... --exclude-table-data=extras_objectchange netbox > netbox.sql
 
 When restoring a database from a file, it's recommended to delete any existing database first to avoid potential conflicts.
 
-!!! warning
+:::warning
     The following will destroy and replace any existing instance of the database.
 
 ```no-highlight

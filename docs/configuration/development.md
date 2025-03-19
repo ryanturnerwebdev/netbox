@@ -8,7 +8,7 @@ This setting enables debugging. Debugging should be enabled only during developm
 clients which access NetBox from a recognized [internal IP address](./system.md#internal_ips) will see debugging tools in the user
 interface.
 
-!!! warning
+:::warning
     Never enable debugging on a production system, as it can expose sensitive data to unauthenticated users and impose a
     substantial performance penalty.
 

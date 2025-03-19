@@ -108,7 +108,7 @@ For more information about database migrations, see the [Django documentation](h
 
 ## Feature Mixins Reference
 
-!!! warning
+:::warning
     Please note that only the classes which appear in this documentation are currently supported. Although other classes may be present within the `features` module, they are not yet supported for use by plugins.
 
 ::: netbox.models.features.BookmarksMixin
@@ -192,7 +192,7 @@ class StatusChoices(ChoiceSet):
     ]
 ```
 
-!!! warning
+:::warning
     For dynamic configuration to work properly, `CHOICES` must be a mutable list, rather than a tuple.
 
 ```python

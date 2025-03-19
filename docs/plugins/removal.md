@@ -1,6 +1,6 @@
 # Removing a Plugin
 
-!!! warning
+:::warning
     The instructions below detail the general process for removing a NetBox plugin. However, each plugin is different and may require additional tasks or modifications to the steps below. Always consult the documentation for a specific plugin **before** attempting to remove it.
 
 ## Disable the Plugin
@@ -59,7 +59,7 @@ netbox=> \dt pluginname_*
 (2 rows)
 ```
 
-!!! warning
+:::warning
     Exercise extreme caution when removing tables. Users are strongly encouraged to perform a backup of their database immediately before taking these actions.
 
 Drop each of the listed tables to remove it from the database:
@@ -84,5 +84,5 @@ netbox=> SELECT * FROM django_migrations WHERE app='pluginname';
 netbox=> DELETE FROM django_migrations WHERE app='pluginname';
 ```
 
-!!! warning
+:::warning
     Exercise extreme caution when altering Django system tables. Users are strongly encouraged to perform a backup of their database immediately before taking these actions.

@@ -28,7 +28,7 @@ DCIM:
   ...
 ```
 
-!!! warning
+:::warning
     The NetBox shell affords direct access to NetBox data and function with very little validation in place. As such, it is crucial to ensure that only authorized, knowledgeable users are ever granted access to it. Never perform any action in the management shell without having a full backup in place.
 
 ## Querying Objects
@@ -170,7 +170,7 @@ To modify an existing object, we retrieve it, update the desired field(s), and c
 'BetterName'
 ```
 
-!!! warning
+:::warning
     The Django ORM provides methods to create/edit many objects at once, namely `bulk_create()` and `update()`. These are best avoided in most cases as they bypass a model's built-in validation and can easily lead to database corruption if not used carefully.
 
 ## Deleting Objects
@@ -195,5 +195,5 @@ To delete multiple objects at once, call `delete()` on a filtered queryset. It's
 'dcim.ConsolePort': 0, 'dcim.PowerPort': 0})
 ```
 
-!!! warning
+:::warning
     Deletions are immediate and irreversible. Always consider the impact of deleting objects carefully before calling `delete()` on an instance or queryset.

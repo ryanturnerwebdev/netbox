@@ -1,6 +1,6 @@
 # Installing a Plugin
 
-!!! warning
+:::warning
     The instructions below detail the general process for installing and configuring a NetBox plugin. However, each plugin is different and may require additional tasks or modifications to the steps below. Always consult the documentation for a specific plugin **before** attempting to install it.
 
 ## Install the Python Package

@@ -4,7 +4,7 @@ NetBox can be configured via [Event Rules](../features/event-rules.md) to transm
 
 For example, suppose you want to automatically configure a monitoring system to start monitoring a device when its operational status is changed to active, and remove it from monitoring for any other status. You can create a webhook in NetBox for the device model and craft its content and destination URL to effect the desired change on the receiving system. Webhooks will be sent automatically by NetBox whenever the configured constraints are met.
 
-!!! warning "Security Notice"
+:::warning "Security Notice"
     Webhooks support the inclusion of user-submitted code to generate the URL, custom headers, and payloads, which may pose security risks under certain conditions. Only grant permission to create or modify webhooks to trusted users.
 
 ## Jinja2 Template Support

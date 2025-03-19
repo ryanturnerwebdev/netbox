@@ -28,7 +28,7 @@ Another option for remote authentication in NetBox is to enable HTTP header-base
 
 Optionally, user profile information can be supplied by `REMOTE_USER_FIRST_NAME`, `REMOTE_USER_LAST_NAME` and `REMOTE_USER_EMAIL` headers. These are saved to the user's profile during the authentication process. These headers can be customized like the `REMOTE_USER` header.
 
-!!! warning Verify Header Compatibility
+:::warning Verify Header Compatibility
     Some WSGI servers may drop headers which contain unsupported characters. For instance, gunicorn v22.0 and later silently drops HTTP headers containing underscores. This behavior can be disabled by changing gunicorn's [`header_map`](https://docs.gunicorn.org/en/stable/settings.html#header-map) setting to `dangerous`.
 
 ### Single Sign-On (SSO)

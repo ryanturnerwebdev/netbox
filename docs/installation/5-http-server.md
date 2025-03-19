@@ -80,7 +80,7 @@ At this point, you should be able to connect to the HTTPS service at the server 
 !!! info
     Please keep in mind that the configurations provided here are bare minimums required to get NetBox up and running. You may want to make adjustments to better suit your production environment.
 
-!!! warning
+:::warning
     Certain components of NetBox (such as the display of rack elevation diagrams) rely on the use of embedded objects. Ensure that your HTTP server configuration does not override the `X-Frame-Options` response header set by NetBox.
 
 ## Troubleshooting

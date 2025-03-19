@@ -144,7 +144,7 @@ Commit the above changes and submit a pull request titled **"Release vX.Y.Z"** t
 
 Once CI has completed and a colleague has reviewed the PR, merge it. This effects a new release in the `main` branch.
 
-!!! warning
+:::warning
     To ensure a streamlined review process, the pull request for a release **must** be limited to the changes outlined in this document. A release PR must never include functional changes to the application: Any unrelated "cleanup" needs to be captured in a separate PR prior to the release being shipped.
 
 ### Create a New Release

@@ -123,7 +123,7 @@ class MyPluginConfig(PluginConfig):
 
 The `PluginConfig` above creates two custom queues with the following names `my_plugin.foo` and `my_plugin.bar`. (The plugin's name is prepended to each queue to avoid conflicts between plugins.)
 
-!!! warning "Configuring the RQ worker process"
+:::warning "Configuring the RQ worker process"
     By default, NetBox's RQ worker process only services the high, default, and low queues. Plugins which introduce custom queues should advise users to either reconfigure the default worker, or run a dedicated worker specifying the necessary queues. For example:
 
     ```

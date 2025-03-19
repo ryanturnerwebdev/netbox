@@ -31,5 +31,5 @@ Each circuit is associated with a provider and assigned a circuit ID, which must
 
 Each circuit may have up to two terminations (A and Z) defined. Each termination can be associated with a particular site or provider network. In the case of the former, a cable can be connected between the circuit termination and a device component to map its physical connectivity.
 
-!!! warning "Physical vs. Virtual Circuits"
+:::warning "Physical vs. Virtual Circuits"
     The circuit model in NetBox represents **physical** connections. Don't confuse these with _virtual_ circuits which may be offered by providers overlaid on physical infrastructure. (For example, a VLAN-tagged subinterface would be a virtual circuit.) A good rule of thumb: If you can't point to it, it's not a physical circuit.
