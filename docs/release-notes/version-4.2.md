@@ -44,7 +44,7 @@
 
 ### Bug Fixes
 
-* [#17436](https://github.com/netbox-community/netbox/issues/17436) - Fix {module} replacement in module bays
+* [#17436](https://github.com/netbox-community/netbox/issues/17436) - Fix \{module\} replacement in module bays
 * [#18013](https://github.com/netbox-community/netbox/issues/18013) - Limit object type to selected object in change log filter
 * [#18241](https://github.com/netbox-community/netbox/issues/18241) - Default logging level of custom scripts changed to INFO
 * [#18247](https://github.com/netbox-community/netbox/issues/18247) - Fix visibility of disabled cable paths in dark mode
@@ -71,7 +71,7 @@
 * [#18154](https://github.com/netbox-community/netbox/issues/18154) - Allow anonymous users to change default table preferences
 * [#18515](https://github.com/netbox-community/netbox/issues/18515) - Fix Django `collectstatic` management command in debug mode with Redis not running
 * [#18456](https://github.com/netbox-community/netbox/issues/18456) - Avoid duplicate MAC Address column in interface tables
-* [#18447](https://github.com/netbox-community/netbox/issues/18447) - Fix `FieldError` exception when sorting interface tables on MAC Address columns 
+* [#18447](https://github.com/netbox-community/netbox/issues/18447) - Fix `FieldError` exception when sorting interface tables on MAC Address columns
 * [#18438](https://github.com/netbox-community/netbox/issues/18438) - Improve performance in IPAM migration `0072_prefix_cached_relations` when upgrading from v4.1 or earlier
 * [#18436](https://github.com/netbox-community/netbox/issues/18436) - Reset primary MAC address when unassigning MAC address from interface
 * [#18181](https://github.com/netbox-community/netbox/issues/18181) - Fix "Create & Add Another" workflow when adding IP addresses to interfaces
