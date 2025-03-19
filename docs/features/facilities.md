@@ -66,5 +66,5 @@ Finally, NetBox models each equipment rack as a discrete object within a site an
 
 Each rack must be associated to a site, but the assignment to a location within that site is optional. Users can also create custom roles to which racks can be assigned. NetBox supports tracking rack space in half-unit increments, so it's possible to mount devices at e.g. position 2.5 within a rack.
 
-!!! tip "Devices"
+:::tip "Devices"
     You'll notice in the diagram above that a device can be installed within a site, location, or rack. This approach affords plenty of flexibility as not all sites need to define child locations, and not all devices reside in racks.

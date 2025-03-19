@@ -2,7 +2,7 @@
 
 Interfaces in NetBox represent network interfaces used to exchange data with connected devices. On modern networks, these are most commonly Ethernet, but other types are supported as well. IP addresses and VLANs can be assigned to interfaces.
 
-!!! tip
+:::tip
     Like most device components, interfaces are instantiated automatically from [interface templates](./interfacetemplate.md) assigned to the selected device type when a device is created.
 
 :::note
@@ -138,7 +138,7 @@ Indicates the configured role for wireless interfaces (access point or station).
 
 The configured channel for wireless interfaces.
 
-!!! tip
+:::tip
     Selecting one of the pre-defined wireless channels will automatically populate the channel frequency and width upon saving the interface.
 
 ### Channel Frequency

@@ -2,7 +2,7 @@
 
 An IP address object in NetBox comprises a single host address (either IPv4 or IPv6) and its subnet mask, and represents an IP address as configured on a network interface. IP addresses can be assigned to [device](../dcim/device.md) and [virtual machine](../virtualization/virtualmachine.md) interfaces, as well as to [FHRP groups](./fhrpgroup.md). Further, each device and virtual machine may have one of its interface IPs designated as its primary IP per address family (one for IPv4 and one for IPv6).
 
-!!! tip
+:::tip
     When primary IPs are set for both IPv4 and IPv6, NetBox will prefer IPv6. This can be changed by setting the `PREFER_IPV4` configuration parameter.
 
 ## Network Address Translation (NAT)
@@ -22,7 +22,7 @@ The IPv4 or IPv6 address and mask, in CIDR notation (e.g. `192.0.2.0/24`).
 
 The operational status of the IP address.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `ipam.IPAddress.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Role
@@ -38,7 +38,7 @@ The functional role fulfilled by this IP address. Options include:
 * **GLBP:** A virtual IP address managed with the GLBP protocol
 * **CARP:** A virtual IP address managed with the CARP protocol
 
-!!! tip
+:::tip
     Virtual IP addresses should be assigned to [FHRP groups](./fhrpgroup.md) rather than to actual interfaces to accurately model their shared nature.
 
 ### VRF

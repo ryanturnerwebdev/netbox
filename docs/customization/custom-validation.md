@@ -112,7 +112,7 @@ In addition to validating object attributes, custom validators can also match ag
 }
 ```
 
-!!! tip
+:::tip
     Custom validation should generally not be used to enforce permissions. NetBox provides a robust [object-based permissions](../administration/permissions.md) mechanism which should be used for this purpose.
 
 ### Dotted Path to Class

@@ -11,7 +11,7 @@ Disable the plugin by removing it from the `PLUGINS` list in `configuration.py`.
 
 Delete the plugin's entry (if any) in the `PLUGINS_CONFIG` dictionary in `configuration.py`.
 
-!!! tip
+:::tip
     If there's a chance you may reinstall the plugin, consider commenting out any configuration parameters instead of deleting them.
 
 ## Re-index Search Entries

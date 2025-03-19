@@ -299,7 +299,7 @@ See the [housekeeping documentation](../administration/housekeeping.md) for furt
 
 At this point, we should be able to run NetBox's development server for testing. We can check by starting a development instance locally.
 
-!!! tip
+:::tip
     Check that the Python virtual environment is still active before attempting to run the server.
 
 ```no-highlight

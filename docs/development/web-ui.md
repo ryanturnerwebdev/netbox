@@ -122,7 +122,7 @@ All output files will be written to `netbox/project-static/dist`, where Django w
 
 Before committing any changes to TypeScript files, and periodically throughout the development process, you should run `yarn validate` to catch formatting, code quality, or type errors.
 
-!!! tip "IDE Integrations"
+:::tip "IDE Integrations"
     If you're using an IDE, it is strongly recommended to install [ESLint](https://eslint.org/docs/user-guide/integrations), [TypeScript](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support), and [Prettier](https://prettier.io/docs/en/editors.html) integrations, if available. Most of them will automatically check and/or correct issues in the code as you develop, which can significantly increase your productivity as a contributor.
 
 `yarn validate` is a wrapper around the following subcommands, any of which can be run individually:

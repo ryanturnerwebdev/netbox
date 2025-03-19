@@ -20,7 +20,7 @@ The [cluster group](./clustergroup.md) to which this cluster belongs.
 
 The cluster's operational status.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `Cluster.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Scope

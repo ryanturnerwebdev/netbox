@@ -20,7 +20,7 @@ The feed's name or other identifier. Must be unique to the assigned power panel.
 
 The feed's operational status.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `PowerFeed.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Type

@@ -37,7 +37,7 @@ To submit a new feature request or bug report for NetBox, select and complete th
 
 Check out our [issue intake policy](https://github.com/netbox-community/netbox/wiki/Issue-Intake-Policy) for an overview of the issue triage and approval processes.
 
-!!! tip
+:::tip
     Avoid starting work on a proposal before it has been accepted. Not all proposed changes will be accepted, and we'd hate for you to waste time working on code that might not make it into the project.
 
 ## Getting Help

@@ -16,7 +16,7 @@ The [wireless LAN group](./wirelesslangroup.md) to which this wireless LAN is as
 
 The operational status of the wireless network.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `WirelessLAN.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### VLAN

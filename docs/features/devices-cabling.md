@@ -29,7 +29,7 @@ A manufacturer generally represents an organization which produces hardware devi
 
 A device type represents a unique combination of manufacturer and hardware model which maps to discrete make and model of device which exists in the real world. Each device type typically has a number of components created on it, representing network interfaces, device bays, and so on. New devices of this type can then be created in NetBox, and any associated components will be automatically replicated from the device type. This avoids needing to tediously recreate components for each device as it is added in NetBox.
 
-!!! tip "The Device Type Library"
+:::tip "The Device Type Library"
     While users are always free to create their own device types in NetBox, many find it convenient to draw from our [community library](https://github.com/netbox-community/devicetype-library) of pre-defined device types. This is possible because a particular make and model of device is applicable universally and never changes.
 
 All the following can be modeled as components:
@@ -73,7 +73,7 @@ A virtual device context (VDC) is a logical partition within a device. Each VDC 
 
 Much like device types and devices, module types can instantiate discrete modules, which are hardware components installed within devices. Modules often have their own child components, which become available to the parent device. For example, when modeling a chassis-based switch with multiple line cards in NetBox, the chassis would be created (from a device type) as a device, and each of its line cards would be instantiated from a module type as a module installed in one of the device's module bays.
 
-!!! tip "Device Bays vs. Module Bays"
+:::tip "Device Bays vs. Module Bays"
     What's the difference between device bays and module bays? Device bays are appropriate when the installed hardware has its own management plane, isolated from the parent device. A common example is a blade server chassis in which the blades share power but operate independently. In contrast, a module bay holds a module which does _not_ operate independently of its parent device, as with the chassis switch line card example mentioned above.
 
 One especially nice feature of modules is that templated components can be automatically renamed according to the module bay into which the parent module is installed. For example, if we create a module type with interfaces named `Gi{module}/0/1-48` and install a module of this type into module bay 7 of a device, NetBox will create interfaces named `Gi7/0/1-48`.

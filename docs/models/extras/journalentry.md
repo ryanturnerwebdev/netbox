@@ -8,7 +8,7 @@ Most objects in NetBox support journaling. This is the ability of users to recor
 
 A general classification for the entry type (info, success, warning, or danger.)
 
-!!! tip
+:::tip
     Additional kinds may be defined by setting `JournalEntry.kind` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Comments

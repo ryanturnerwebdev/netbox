@@ -10,7 +10,7 @@ If disabled, the values of API tokens will not be displayed after each token's i
 
 ## ALLOWED_URL_SCHEMES
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: `('file', 'ftp', 'ftps', 'http', 'https', 'irc', 'mailto', 'sftp', 'ssh', 'tel', 'telnet', 'tftp', 'vnc', 'xmpp')`
 

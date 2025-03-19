@@ -12,7 +12,7 @@ The IPv4 or IPv6 network this prefix represents.
 
 The prefix's operational status. Note that the status of a prefix does _not_ have any impact on its member [IP addresses](./ipaddress.md), which may have their statuses defined independently. The "container" status indicates that the prefix exists merely as a container for organizing child prefixes.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `Prefix.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### VRF

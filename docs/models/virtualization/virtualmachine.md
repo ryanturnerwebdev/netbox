@@ -18,7 +18,7 @@ The functional [role](../dcim/devicerole.md) assigned to the VM.
 
 The VM's operational status.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `VirtualMachine.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Site & Cluster
@@ -37,7 +37,7 @@ A VM may be associated with a particular [platform](../dcim/platform.md) to indi
 
 Each VM may designate one primary IPv4 address and/or one primary IPv6 address for management purposes.
 
-!!! tip
+:::tip
     NetBox will prefer IPv6 addresses over IPv4 addresses by default. This can be changed by setting the `PREFER_IPV4` configuration parameter.
 
 ### vCPUs

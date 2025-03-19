@@ -47,7 +47,7 @@ If the plugin introduces new database models, run the provided schema migrations
 (venv) $ python3 manage.py migrate
 ```
 
-!!! tip
+:::tip
     It's okay to run the `migrate` management command even if the plugin does not include any migration files.
 
 ## Collect Static Files

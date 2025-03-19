@@ -28,7 +28,7 @@ The [physical type](./racktype.md) of this rack. The rack type defines physical 
 
 Operational status.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `Rack.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Role

@@ -41,7 +41,7 @@ In addition to its expansive and robust data model, NetBox offers myriad mechani
 
 Because NetBox is an open source application licensed under [Apache 2](https://www.apache.org/licenses/LICENSE-2.0.html), its entire code base is completely accessible to the end user, and there's never a risk of vendor lock-in. Additionally, NetBox development is an entirely public, community-driven process to which everyone can provide input.
 
-!!! tip "NetBox Development"
+:::tip "NetBox Development"
     Interested in contributing to NetBox? Check out our [GitHub repository](https://github.com/netbox-community/netbox) to get started!
 
 ## :material-language-python: Powered by Python

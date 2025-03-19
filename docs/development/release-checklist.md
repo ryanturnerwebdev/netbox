@@ -126,7 +126,7 @@ Then, compile these portable (`.po`) files for use in the application:
 ./manage.py compilemessages
 ```
 
-!!! tip
+:::tip
     Consult the translation documentation for more detail on [updating translated strings](./translations.md#updating-translated-strings) if you've not set up the Transifex client already.
 
 ### Update Version and Changelog
@@ -135,7 +135,7 @@ Then, compile these portable (`.po`) files for use in the application:
 * Update the example version numbers in the feature request and bug report templates under `.github/ISSUE_TEMPLATES/`.
 * Add a section for this release at the top of the changelog page for the minor version (e.g. `docs/release-notes/version-4.2.md`) listing all relevant changes made in this release.
 
-!!! tip
+:::tip
     Put yourself in the shoes of the user when recording change notes. Focus on the effect that each change has for the end user, rather than the specific bits of code that were modified in a PR. Ensure that each message conveys meaning absent context of the initial feature request or bug report. Remember to include key words or phrases (such as exception names) that can be easily searched.
 
 ### Submit a Pull Request

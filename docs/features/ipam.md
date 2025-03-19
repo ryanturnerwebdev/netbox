@@ -26,7 +26,7 @@ click RIR "../../models/ipam/rir/"
 click Role "../../models/ipam/role/"
 ```
 
-!!! tip "Automatic Hierarchies"
+:::tip "Automatic Hierarchies"
     IP objects in NetBox never need to be manually assigned to the parent objects. The construction of hierarchies is handled automatically by the application according to the inherent rules of IP addressing.
 
 An example hierarchy might look like this:
@@ -55,7 +55,7 @@ NetBox supports the modeling of discrete virtual routing and forwarding (VRF) in
 
 VRF modeling in NetBox very closely follows what you find in real-world network configurations, with each VRF assigned a standards-compliant route distinguisher. You can even create route targets to manage the import and export of routing information among VRFs.
 
-!!! tip "Enforcing Unique IP Space"
+:::tip "Enforcing Unique IP Space"
     Each VRF can be independently configured to permit or prohibit duplicate IP objects. For example, a VRF which has been configured to enforce unique IP space will not allow the creation of two 192.0.2.0/24 prefixes. The ability to toggle this restriction per VRF affords the user maximum flexibility in modeling their IP space.
 
 ## AS Numbers

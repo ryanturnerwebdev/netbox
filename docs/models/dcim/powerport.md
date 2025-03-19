@@ -2,7 +2,7 @@
 
 A power port is a device component which draws power from some external source (e.g. an upstream [power outlet](./poweroutlet.md)), and generally represents a power supply internal to a device.
 
-!!! tip
+:::tip
     Like most device components, power ports are instantiated automatically from [power port templates](./powerporttemplate.md) assigned to the selected device type when a device is created.
 
 ## Fields

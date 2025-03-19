@@ -16,7 +16,7 @@ A unique URL-friendly identifier. (This value can be used for filtering.)
 
 The site's operational status.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `Site.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Region
@@ -43,7 +43,7 @@ The site's physical address, used for mapping.
 
 The address to use for deliveries destined for the site.
 
-!!! tip
+:::tip
     You can also designate [points of contact](../../features/contacts.md) for each site to provide additional contact details.
 
 ### Latitude & Longitude

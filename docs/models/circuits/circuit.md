@@ -33,7 +33,7 @@ The operational status of the circuit. By default, the following statuses are av
 | Deprovisioning |
 | Decommissioned |
 
-!!! tip "Custom circuit statuses"
+:::tip "Custom circuit statuses"
     Additional circuit statuses may be defined by setting `Circuit.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Distance

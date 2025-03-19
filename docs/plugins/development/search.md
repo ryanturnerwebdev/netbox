@@ -25,7 +25,7 @@ To register one or more indexes with NetBox, define a list named `indexes` at th
 indexes = [MyModelIndex]
 ```
 
-!!! tip
+:::tip
     The path to the list of search indexes can be modified by setting `search_indexes` in the PluginConfig instance.
 
 ::: netbox.search.SearchIndex

@@ -71,7 +71,7 @@ python3 -m venv ~/.venv/netbox
 
 This will create a directory named `.venv/netbox/` in your home directory, which houses a virtual copy of the Python executable and its related libraries and tooling. When running NetBox for development, it will be run using the Python binary at `~/.venv/netbox/bin/python`.
 
-!!! tip "Virtual Environments"
+:::tip "Virtual Environments"
     Keeping virtual environments in `~/.venv/` is a common convention but entirely optional: Virtual environments can be created almost wherever you please. Also consider using [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/en/stable/) to simplify the management of multiple environments.
 
 Once created, activate the virtual environment:
@@ -138,7 +138,7 @@ Quit the server with CONTROL-C.
 
 This ensures that your development environment is now complete and operational. The development server will monitor the development environment and automatically reload in response to any changes made.
 
-!!! tip "IDE Integration"
+:::tip "IDE Integration"
     Some IDEs, such as the highly-recommended [PyCharm](https://www.jetbrains.com/pycharm/), will integrate with Django's development server and allow you to run it directly within the IDE. This is strongly encouraged as it makes for a much more convenient development environment.
 
 ## UI Development

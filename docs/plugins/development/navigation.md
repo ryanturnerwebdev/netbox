@@ -19,7 +19,7 @@ menu = PluginMenu(
 
 Note that each group is a two-tuple containing a label and an iterable of menu items. The group's label serves as the section header within the submenu. A group label is required even if you have only one group of items.
 
-!!! tip
+:::tip
     The path to the menu class can be modified by setting `menu` in the PluginConfig instance.
 
 A `PluginMenu` has the following attributes:
@@ -30,7 +30,7 @@ A `PluginMenu` has the following attributes:
 | `groups`     | Yes      | An iterable of named groups containing menu items |
 | `icon_class` | -        | The CSS name of the icon to use for the heading   |
 
-!!! tip
+:::tip
     Supported icons can be found at [Material Design Icons](https://materialdesignicons.com/)
 
 ### The Default Menu
@@ -41,7 +41,7 @@ If your plugin has only a small number of menu items, it may be desirable to use
 menu_items = (item1, item2, item3)
 ```
 
-!!! tip
+:::tip
     The path to the menu items list can be modified by setting `menu_items` in the PluginConfig instance.
 
 ## Menu Items
@@ -88,5 +88,5 @@ A `PluginMenuButton` has the following attributes:
 
 Any buttons associated within a menu item will be shown only if the user has permission to view the link, regardless of what permissions are set on the buttons.
 
-!!! tip
+:::tip
     Supported icons can be found at [Material Design Icons](https://materialdesignicons.com/)

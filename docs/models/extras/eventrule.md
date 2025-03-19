@@ -32,7 +32,7 @@ The event types which will trigger the rule. At least one event type must be sel
 | Job failed     | A background job fails                      |
 | Job errored    | A background job is aborted due to an error |
 
-!!! tip "Custom Event Types"
+:::tip "Custom Event Types"
     The above list includes only built-in event types. NetBox plugins can also register their own custom event types.
 
 ### Conditions

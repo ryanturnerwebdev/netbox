@@ -2,7 +2,7 @@
 
 A console server is a device which provides remote access to the local consoles of connected devices. They are typically used to provide remote out-of-band access to network devices, and generally connect to [console ports](./consoleport.md).
 
-!!! tip
+:::tip
     Like most device components, console server ports are instantiated automatically from [console server port templates](./consoleserverporttemplate.md) assigned to the selected device type when a device is created.
 
 ## Fields

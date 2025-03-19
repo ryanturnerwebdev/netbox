@@ -17,7 +17,7 @@ To register one or more data backends with NetBox, define a list named `backends
 backends = [MyDataBackend]
 ```
 
-!!! tip
+:::tip
     The path to the list of data backends can be modified by setting `data_backends` in the PluginConfig instance.
 
 ::: netbox.data_backends.DataBackend

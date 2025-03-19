@@ -24,5 +24,5 @@ def test_abort_request(instance, **kwargs):
 
 An error message must be supplied when raising `AbortRequest`. This will be conveyed to the user and should clearly explain the reason for which the request was aborted, as well as any potential remedy.
 
-!!! tip "Consider custom validation rules"
+:::tip "Consider custom validation rules"
     This exception is intended to be used for handling complex evaluation logic and should be used sparingly. For simple object validation (such as the contrived example above), consider using [custom validation rules](../../customization/custom-validation.md) instead.

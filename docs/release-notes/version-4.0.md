@@ -275,7 +275,7 @@
 
 ## v4.0.0 (2024-05-06)
 
-!!! tip "Plugin Maintainers"
+:::tip "Plugin Maintainers"
     Please see the dedicated [plugin migration guide](../plugins/development/migration-v4.md) for a checklist of changes that may be needed to ensure compatibility with NetBox v4.0.
 
 ### Breaking Changes

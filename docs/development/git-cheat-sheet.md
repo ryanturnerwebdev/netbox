@@ -218,7 +218,7 @@ $ git commit -m "Fixes #123: Fixed the thing that was broken"
  create mode 100644 foo.py
 ```
 
-!!! tip "Automatically Closing Issues"
+:::tip "Automatically Closing Issues"
     GitHub will [automatically close](https://github.blog/2013-01-22-closing-issues-via-commit-messages/) any issues referenced in a commit message by `Fixes:` or `Closes:` when the commit is merged into the repository's default branch. Contributors are strongly encouraged to follow this convention when forming commit messages. (Use "Closes" for feature requests and "Fixes" for bugs.)
 
 ### Push a Commit Upstream
@@ -246,7 +246,7 @@ To https://github.com/netbox-community/netbox
 Branch 'testing' set up to track remote branch 'testing' from 'origin'.
 ```
 
-!!! tip
+:::tip
     You can apply the following git configuration to automatically set the upstream for all new branches. This obviates the need to specify `-u origin`.
 
     ```

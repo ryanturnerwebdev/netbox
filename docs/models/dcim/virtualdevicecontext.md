@@ -29,5 +29,5 @@ A vendor-prescribed unique identifier for the VDC (optional). Must be unique to 
 
 Each VDC may designate one primary IPv4 address and/or one primary IPv6 address for management purposes.
 
-!!! tip
+:::tip
     NetBox will prefer IPv6 addresses over IPv4 addresses by default. This can be changed by setting the `PREFER_IPV4` configuration parameter.

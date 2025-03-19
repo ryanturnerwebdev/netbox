@@ -16,7 +16,7 @@ The configured VLAN name.
 
 The VLAN's operational status.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `VLAN.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Role

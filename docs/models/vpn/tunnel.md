@@ -18,7 +18,7 @@ The operational status of the tunnel. By default, the following statuses are ava
 * Active
 * Disabled
 
-!!! tip "Custom tunnel statuses"
+:::tip "Custom tunnel statuses"
     Additional tunnel statuses may be defined by setting `Tunnel.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Group

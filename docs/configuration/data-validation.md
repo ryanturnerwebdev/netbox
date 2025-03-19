@@ -2,7 +2,7 @@
 
 ## CUSTOM_VALIDATORS
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 This is a mapping of models to [custom validators](../customization/custom-validation.md) that have been defined locally to enforce custom validation logic. An example is provided below:
 
@@ -92,7 +92,7 @@ The following colors are supported:
 
 ## PROTECTION_RULES
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 This is a mapping of models to [custom validators](../customization/custom-validation.md) against which an object is evaluated immediately prior to its deletion. If validation fails, the object is not deleted. An example is provided below:
 

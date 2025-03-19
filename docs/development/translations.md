@@ -46,7 +46,7 @@ Once retrieved, the updated strings need to be compiled into new `.mo` files so 
 
 Once any new `.mo` files have been generated, they need to be committed and pushed back up to GitHub. (Again, this is typically done as part of publishing a new NetBox release.)
 
-!!! tip
+:::tip
     Run `git status` to check that both `*.mo` & `*.po` files have been updated as expected.
 
 ## Proposing New Languages

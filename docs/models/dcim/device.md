@@ -58,7 +58,7 @@ If installed in a rack, this field denotes the primary face on which the device 
 
 If installed in a rack, this field indicates the base rack unit in which the device is mounted.
 
-!!! tip
+:::tip
     Devices with a height of more than one rack unit should be set to the lowest-numbered rack unit that they occupy.
 
 ### Latitude & Longitude
@@ -69,7 +69,7 @@ GPS coordinates of the device for geolocation.
 
 The device's operational status.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `Device.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Platform
@@ -84,7 +84,7 @@ The [configuration template](../extras/configtemplate.md) from which the configu
 
 Each device may designate one primary IPv4 address and/or one primary IPv6 address for management purposes.
 
-!!! tip
+:::tip
     NetBox will prefer IPv6 addresses over IPv4 addresses by default. This can be changed by setting the `PREFER_IPV4` configuration parameter.
 
 ### Out-of-band (OOB) IP Address

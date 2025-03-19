@@ -34,7 +34,7 @@ Note that some models (namely device types and module types) do not support CSV 
 
 Sometimes you'll find that data you need to populate in NetBox can be easily reduced to a pattern. For example, suppose you have one hundred branch sites and each site gets five VLANs, numbered 101 through 105. While it's certainly possible to explicitly define each of these 500 VLANs in a CSV file for import, it may be quicker to draft a simple custom script to automatically create these VLANs according to the pattern. This ensures a high degree of confidence in the validity of the data, since it's impossible for a script to "miss" a VLAN here or there.
 
-!!! tip "Reconstruct Existing Data with Scripts"
+:::tip "Reconstruct Existing Data with Scripts"
     Sometimes, you might want to write a script to populate objects even if you have the necessary data ready for import. This is because using a script eliminates the need to manually verify existing data prior to import.
 
 ## REST API

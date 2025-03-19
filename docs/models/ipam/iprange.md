@@ -26,7 +26,7 @@ The user-defined functional [role](./role.md) assigned to the IP range.
 
 The IP range's operational status. Note that the status of a range does _not_ have any impact on its member IP addresses, which may have their statuses defined independently.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `IPRange.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Mark Utilized

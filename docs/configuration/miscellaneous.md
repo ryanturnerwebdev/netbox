@@ -15,7 +15,7 @@ ADMINS = [
 
 ## BANNER_BOTTOM
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Sets content for the bottom banner in the user interface.
 
@@ -23,7 +23,7 @@ Sets content for the bottom banner in the user interface.
 
 ## BANNER_LOGIN
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 This defines custom content to be displayed on the login page above the login form. HTML is allowed.
 
@@ -31,7 +31,7 @@ This defines custom content to be displayed on the login page above the login fo
 
 ## BANNER_MAINTENANCE
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 This adds a banner to the top of every page when maintenance mode is enabled. HTML is allowed.
 
@@ -39,11 +39,11 @@ This adds a banner to the top of every page when maintenance mode is enabled. HT
 
 ## BANNER_TOP
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Sets content for the top banner in the user interface.
 
-!!! tip
+:::tip
     If you'd like the top and bottom banners to match, set the following:
 
     ```python
@@ -65,7 +65,7 @@ This data enables the project maintainers to estimate how many NetBox deployment
 
 ## CHANGELOG_RETENTION
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: 90
 
@@ -98,7 +98,7 @@ The maximum size (in bytes) of an incoming HTTP request (i.e. `GET` or `POST` da
 
 ## ENFORCE_GLOBAL_UNIQUE
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: True
 
@@ -126,7 +126,7 @@ The maximum amount (in bytes) of uploaded data that will be held in memory befor
 
 ## JOB_RETENTION
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: 90
 
@@ -139,7 +139,7 @@ The number of days to retain job results (scripts and reports). Set this to `0` 
 
 ## MAINTENANCE_MODE
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: False
 
@@ -149,7 +149,7 @@ Setting this to True will display a "maintenance mode" banner at the top of ever
 
 ## MAPS_URL
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: `https://maps.google.com/?q=` (Google Maps)
 
@@ -159,7 +159,7 @@ This specifies the URL to use when presenting a map of a physical location by st
 
 ## MAX_PAGE_SIZE
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: 1000
 
@@ -177,7 +177,7 @@ Toggle the availability Prometheus-compatible metrics at `/metrics`. See the [Pr
 
 ## PREFER_IPV4
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: False
 

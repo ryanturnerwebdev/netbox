@@ -44,7 +44,7 @@ class MyModelForm(NetBoxModelForm):
         fields = ('name', 'status', 'site', 'comments', 'tags')
 ```
 
-!!! tip "Comment fields"
+:::tip "Comment fields"
     If your form has a `comments` field, there's no need to list it; this will always appear last on the page.
 
 ### `NetBoxModelImportForm`

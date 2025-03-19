@@ -21,5 +21,5 @@ The circuit's operation priority relative to its peers within the group. The ass
 * Tertiary
 * Inactive
 
-!!! tip
+:::tip
     Additional priority choices may be defined by setting `CircuitGroupAssignment.priority` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.

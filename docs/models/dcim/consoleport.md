@@ -2,7 +2,7 @@
 
 A console port provides connectivity to the physical console of a device. These are typically used for temporary access by someone who is physically near the device, or for remote out-of-band access provided via a networked console server.
 
-!!! tip
+:::tip
     Like most device components, console ports are instantiated automatically from [console port templates](./consoleporttemplate.md) assigned to the selected device type when a device is created.
 
 ## Fields

@@ -16,5 +16,5 @@ A power feed represents a discrete power circuit originating from an upstream po
 
 A device power port can be connected to a power feed via a cable. Only one port can be connected to a feed: Where multiple devices draw power from the same feed, a power distribution unit (PDU) must be modeled as an individual device mapping a power port to multiple power outlets to which the downstream devices can connect (as in the example above).
 
-!!! tip "Primary and Redundant Power"
+:::tip "Primary and Redundant Power"
     Each power feed in NetBox is assigned a type: primary or redundant. This allows easily modeling redundant power distribution topologies. In scenarios involving only a single, non-redundant power supply, mark all power feeds as primary.

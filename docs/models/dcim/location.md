@@ -24,7 +24,7 @@ A unique URL-friendly identifier. (This value can be used for filtering.)
 
 The location's operational status.
 
-!!! tip
+:::tip
     Additional statuses may be defined by setting `Location.status` under the [`FIELD_CHOICES`](../../configuration/data-validation.md#field_choices) configuration parameter.
 
 ### Facility

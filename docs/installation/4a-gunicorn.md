@@ -1,6 +1,6 @@
 # Gunicorn
 
-!!! tip
+:::tip
     This page provides instructions for setting up the [gunicorn](http://gunicorn.org/) WSGI server. If you plan to use [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) instead, go [here](./4b-uwsgi.md).
 
 NetBox runs as a [WSGI application](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface) behind an HTTP server. This documentation shows how to install and configure [gunicorn](http://gunicorn.org/) (which is automatically installed with NetBox) for this role, however other WSGI servers are available and should work similarly well.

@@ -2,7 +2,7 @@
 
 ## GRAPHQL_ENABLED
 
-!!! tip "Dynamic Configuration Parameter"
+:::tip "Dynamic Configuration Parameter"
 
 Default: True
 
