@@ -158,9 +158,9 @@ The following template blocks have been renamed or removed:
 Ditch any legacy "float" controls (e.g. `float-end`) in favor of Bootstrap's new [flex behaviors](https://getbootstrap.com/docs/5.3/utilities/flex/) for controlling the layout and sizing of elements horizontally. For example, the following will align two items against the left and right sides of the parent element:
 
 ```html
-<div class="d-flex justify-content-between">
+<div className="d-flex justify-content-between">
     <h3>Title text</h3>
-    <i class="mdi mdi-close"></i>
+    <i className="mdi mdi-close"></i>
 </div>
 ```
 
@@ -173,9 +173,9 @@ When using [offset columns](https://getbootstrap.com/docs/5.3/layout/columns/#of
 Tables inside cards should be embedded directly, not nested inside a `card-body` element.
 
 ```html title="Old"
-<div class="card">
-    <div class="card-body">
-        <table class="table table-hover attr-table">
+<div className="card">
+    <div className="card-body">
+        <table className="table table-hover attr-table">
             ...
         </table>
     </div>
@@ -183,8 +183,8 @@ Tables inside cards should be embedded directly, not nested inside a `card-body`
 ```
 
 ```html title="New"
-<div class="card">
-    <table class="table table-hover attr-table">
+<div className="card">
+    <table className="table table-hover attr-table">
         ...
     </table>
 </div>
@@ -195,11 +195,11 @@ Tables inside cards should be embedded directly, not nested inside a `card-body`
 The `btn-sm` (small) class is no longer typically needed on general-purpose buttons.
 
 ```html title="Old"
-<a href="#" class="btn btn-sm btn-primary">Text</a>
+<a href="#" className="btn btn-sm btn-primary">Text</a>
 ```
 
 ```html title="New"
-<a href="#" class="btn btn-primary">Text</a>
+<a href="#" className="btn btn-primary">Text</a>
 ```
 
 ### Update `bg-$color` classes
@@ -207,11 +207,11 @@ The `btn-sm` (small) class is no longer typically needed on general-purpose butt
 Foreground (text) color is no longer automatically adjusted by `bg-$color` classes. To ensure sufficient contrast with the background color, use the [`text-bg-$color`](https://getbootstrap.com/docs/5.3/helpers/color-background/) form of the class instead, or set the text color separately with `text-$color`.
 
 ```html title="Old"
-<span class="badge bg-primary">Text</span>
+<span className="badge bg-primary">Text</span>
 ```
 
 ```html title="New"
-<span class="badge text-bg-primary">Text</span>
+<span className="badge text-bg-primary">Text</span>
 ```
 
 ### Obsolete custom CSS classes

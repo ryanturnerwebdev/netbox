@@ -105,7 +105,7 @@ class CircuitTable(TenancyColumnsMixin, ContactsColumnMixin, NetBoxTable):
 {% load i18n %}
 
 {# A short string #}
-<h5 class="card-header">{% trans "Circuit List" %}</h5>
+<h5 className="card-header">{% trans "Circuit List" %}</h5>
 
 {# A longer string with a context variable #}
 {% blocktrans trimmed with count=object.circuits.count %}
