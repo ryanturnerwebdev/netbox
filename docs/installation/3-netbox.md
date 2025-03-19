@@ -328,7 +328,7 @@ Next, connect to the name or IP of the server (as defined in `ALLOWED_HOSTS`) on
     firewall-cmd --zone=public --add-port=8000/tcp
     ```
 
-!!! danger "Not for production use"
+:::danger "Not for production use"
     The development server is for development and testing purposes only. It is neither performant nor secure enough for production use. **Do not use it in production.**
 
 !!! warning

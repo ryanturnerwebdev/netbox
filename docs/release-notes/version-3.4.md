@@ -299,9 +299,9 @@ Reports and custom scripts can now be scheduled for execution at a desired futur
 
 #### API for Staged Changes ([#10851](https://github.com/netbox-community/netbox/issues/10851))
 
-This release introduces a new programmatic API that enables plugins and custom scripts to prepare changes in NetBox without actually committing them to the active database. To stage changes, create and activate a branch using the `checkout()` context manager. Any changes made within this context will be captured, recorded, and rolled back for future use. Once ready, a branch can be applied to the active database by calling `merge()`. 
+This release introduces a new programmatic API that enables plugins and custom scripts to prepare changes in NetBox without actually committing them to the active database. To stage changes, create and activate a branch using the `checkout()` context manager. Any changes made within this context will be captured, recorded, and rolled back for future use. Once ready, a branch can be applied to the active database by calling `merge()`.
 
-!!! danger "Experimental Feature"
+:::danger "Experimental Feature"
     This feature is still under active development and considered experimental in nature. Its use in production is strongly discouraged at this time.
 
 ### Enhancements

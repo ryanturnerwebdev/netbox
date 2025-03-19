@@ -59,10 +59,10 @@ ALTER DATABASE netbox OWNER TO netbox;
 GRANT CREATE ON SCHEMA public TO netbox;
 ```
 
-!!! danger "Use a strong password"
+:::danger "Use a strong password"
     **Do not use the password from the example.** Choose a strong, random password to ensure secure database authentication for your NetBox installation.
 
-!!! danger "Use UTF8 encoding"
+:::danger "Use UTF8 encoding"
     Make sure that your database uses `UTF8` encoding (the default for new installations). Especially do not use `SQL_ASCII` encoding, as it can lead to unpredictable and unrecoverable errors. Enter `\l` to check your encoding.
 
 Once complete, enter `\q` to exit the PostgreSQL shell.
@@ -73,7 +73,7 @@ You can verify that authentication works by executing the `psql` command and pas
 
 ```no-highlight
 $ psql --username netbox --password --host localhost netbox
-Password for user netbox: 
+Password for user netbox:
 psql (12.5 (Ubuntu 12.5-0ubuntu0.20.04.1))
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
 Type "help" for help.

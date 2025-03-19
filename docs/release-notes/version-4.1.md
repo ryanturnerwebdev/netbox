@@ -22,7 +22,7 @@
 
 ## v4.1.9 (2024-12-17)
 
-!!! danger "Do Not Use"
+:::danger "Do Not Use"
     This release contains a regression which breaks change logging. Please use release v4.1.10 instead.
 
 ### Enhancements

@@ -116,10 +116,10 @@ git merge $sourcebranch
 ```
 
 ``` title="Example"
-$ git checkout testing 
+$ git checkout testing
 Switched to branch 'testing'
 Your branch is up to date with 'origin/testing'.
-$ git merge branch2 
+$ git merge branch2
 Updating 9a12b5b5f..8ee42390b
 Fast-forward
  newfile.py | 0
@@ -237,10 +237,10 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
 Total 3 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-remote: 
+remote:
 remote: Create a pull request for 'testing' on GitHub by visiting:
 remote:      https://github.com/netbox-community/netbox/pull/new/testing
-remote: 
+remote:
 To https://github.com/netbox-community/netbox
  * [new branch]          testing -> testing
 Branch 'testing' set up to track remote branch 'testing' from 'origin'.
@@ -248,7 +248,7 @@ Branch 'testing' set up to track remote branch 'testing' from 'origin'.
 
 !!! tip
     You can apply the following git configuration to automatically set the upstream for all new branches. This obviates the need to specify `-u origin`.
-    
+
     ```
     git config --global push.default current
     ```
@@ -311,7 +311,7 @@ $ git commit --amend --no-edit
  create mode 100644 newfile.py
 ```
 
-!!! danger "Don't Amend After Pushing"
+:::danger "Don't Amend After Pushing"
     Never amend a commit you've already pushed upstream unless you're **certain** no one else is working on the same branch. Force-pushing will overwrite the change history, which will break any commits from other contributors. When in doubt, create a new commit instead.
 
 ### Undo the Last Commit
@@ -338,7 +338,7 @@ $ git commit -m "Fixed commit"
  1 file changed, 65 insertions(+), 20 deletions(-)
 ```
 
-!!! danger "Don't Reset After Pushing"
+:::danger "Don't Reset After Pushing"
     Resetting only works until you've pushed your local changes upstream. If you've already pushed upstream, use `git revert` instead. This will create a _new_ commit that reverts the erroneous one, but ensures that the git history remains intact.
 
 ### Rebase from Upstream
