@@ -45,7 +45,7 @@ Next, create a file in the same directory as `configuration.py` (typically `/opt
 
 ### General Server Configuration
 
-!!! info
+:::info
     When using Active Directory you may need to specify a port on `AUTH_LDAP_SERVER_URI` to authenticate users from all domains in the forest. Use `3269` for secure, or `3268` for non-secure access to the GC (Global Catalog).
 
 ```python
@@ -83,7 +83,7 @@ STARTTLS can be configured by setting `AUTH_LDAP_START_TLS = True` and using the
 
 ### User Authentication
 
-!!! info
+:::info
     When using Windows Server 2012+, `AUTH_LDAP_USER_DN_TEMPLATE` should be set to None.
 
 ```python
@@ -108,7 +108,7 @@ AUTH_LDAP_USER_ATTR_MAP = {
 
 ### User Groups for Permissions
 
-!!! info
+:::info
     When using Microsoft Active Directory, support for nested groups can be activated by using `NestedGroupOfNamesType()` instead of `GroupOfNamesType()` for `AUTH_LDAP_GROUP_TYPE`. You will also need to modify the import line to use `NestedGroupOfNamesType` instead of `GroupOfNamesType` .
 
 ```python
@@ -183,7 +183,7 @@ With these configuration options, your users will be able to log in either with 
 
 ### Example Configuration
 
-!!! info
+:::info
     This configuration is intended to serve as a template, but may need to be modified in accordance with your environment.
 
 ```python

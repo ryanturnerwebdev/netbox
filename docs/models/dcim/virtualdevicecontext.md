@@ -4,7 +4,7 @@ A virtual device context (VDC) represents a logical partition within a physical 
 
 Each VDC must be assigned to a device upon creation, after which interfaces belonging to that device can be assigned to one or more of its VDCs. A VDC can have any number of interfaces assigned to it, and an interface can belong to any number of VDCs.
 
-!!! info "A VDC by Any Other Name"
+:::info "A VDC by Any Other Name"
     Network vendors use differing names for this concept. Cisco uses the term VDC, whereas Juniper refers to it as a _Virtual Routing Instance_, and Fortinet uses _Virtual Domain_, for instance. While there may be some nuance among the vendors' unique implementations, the general concept remains the same for each.
 
 ## Fields

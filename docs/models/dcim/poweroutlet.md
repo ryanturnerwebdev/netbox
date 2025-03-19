@@ -31,7 +31,7 @@ The type of power outlet.
 
 ### Color
 
-!!! info "This field was introduced in NetBox v4.2."
+:::info "This field was introduced in NetBox v4.2."
 
 The power outlet's color (optional).
 

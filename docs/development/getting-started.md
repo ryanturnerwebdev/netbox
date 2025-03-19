@@ -183,7 +183,7 @@ python manage.py test dcim.tests.test_views ipam.tests.test_views
 
 This is handy for instances where just a few tests are failing and you want to re-run them individually.
 
-!!! info
+:::info
     NetBox uses [django-rich](https://github.com/adamchainz/django-rich) to enhance Django's default `test` management command.
 
 ## Submitting Pull Requests

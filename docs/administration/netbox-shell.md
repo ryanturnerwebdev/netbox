@@ -143,7 +143,7 @@ To return the inverse of a filtered queryset, use `exclude()` instead of `filter
 346
 ```
 
-!!! info
+:::info
     The examples above are intended only to provide a cursory introduction to queryset filtering. For an exhaustive list of the available filters, please consult the [Django queryset API documentation](https://docs.djangoproject.com/en/stable/ref/models/querysets/).
 
 ## Creating and Updating Objects

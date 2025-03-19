@@ -1,6 +1,6 @@
 # VLAN Translation Policies
 
-!!! info "This feature was introduced in NetBox v4.2."
+:::info "This feature was introduced in NetBox v4.2."
 
 VLAN translation is a feature that consists of VLAN translation policies and [VLAN translation rules](./vlantranslationrule.md). Many rules can belong to a policy, and each rule defines a mapping of a local to remote VLAN ID (VID). A policy can then be assigned to an [Interface](../dcim/interface.md) or [VMInterface](../virtualization/vminterface.md), and all VLAN translation rules associated with that policy will be visible in the interface details.
 

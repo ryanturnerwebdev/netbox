@@ -11,7 +11,7 @@ The simplest and most direct way of populating data in NetBox is to use the obje
 
 To create a new object in NetBox, find the object type in the navigation menu and click the green "Add" button.
 
-!!! info "Missing Button?"
+:::info "Missing Button?"
     If you don't see an "add" button for certain object types, it's likely that your account does not have sufficient permission to create these types. Ask your NetBox administrator to grant the required permissions.
 
     Also note that some object types, such as device components, cannot be created directly from the navigation menu. These must be created within the context of a parent object (such as a parent device).

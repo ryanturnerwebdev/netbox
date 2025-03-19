@@ -2,7 +2,7 @@
 
 This documentation provides example configurations for both [nginx](https://www.nginx.com/resources/wiki/) and [Apache](https://httpd.apache.org/docs/current/), though any HTTP server which supports WSGI should be compatible.
 
-!!! info
+:::info
     For the sake of brevity, only Ubuntu 20.04 instructions are provided here. These tasks are not unique to NetBox and should carry over to other distributions with minimal changes. Please consult your distribution's documentation for assistance if needed.
 
 ## Obtain an SSL Certificate
@@ -77,7 +77,7 @@ sudo systemctl restart apache2
 
 At this point, you should be able to connect to the HTTPS service at the server name or IP address you provided.
 
-!!! info
+:::info
     Please keep in mind that the configurations provided here are bare minimums required to get NetBox up and running. You may want to make adjustments to better suit your production environment.
 
 :::warning

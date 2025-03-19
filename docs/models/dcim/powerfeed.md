@@ -51,5 +51,5 @@ Indicates whether the circuit provides single- or three-phase power.
 
 The maximum safe utilization of the feed, expressed as a percentage of the total available power. (Typically this will be set to around 80%, to avoid tripping a breaker during heaving spikes in current draw.)
 
-!!! info
+:::info
     The power utilization of a rack is calculated when one or more power feeds are assigned to the rack and connected to devices that draw power.

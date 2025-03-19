@@ -8,7 +8,7 @@
 
 NetBox can be extended to support additional data models and functionality through the use of plugins. A plugin is essentially a self-contained [Django app](https://docs.djangoproject.com/en/stable/) which gets installed alongside NetBox to provide custom functionality. Multiple plugins can be installed in a single NetBox instance, and each plugin can be enabled and configured independently.
 
-!!! info "Django Development"
+:::info "Django Development"
     Django is the Python framework on which NetBox is built. As Django itself is very well-documented, this documentation covers only the aspects of plugin development which are unique to NetBox.
 
 Plugins can do a lot, including:

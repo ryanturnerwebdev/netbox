@@ -18,7 +18,7 @@ If the model has one or more fields with static choices, define those choices in
 
 Once your model definition is complete, generate database migrations by running `manage.py makemigrations -n $NAME --no-header`. Always specify a short unique name when generating migrations.
 
-!!! info "Configuration Required"
+:::info "Configuration Required"
     Set `DEVELOPER = True` in your NetBox configuration to enable the creation of new migrations.
 
 ## 4. Add all standard views

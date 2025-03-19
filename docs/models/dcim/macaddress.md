@@ -1,6 +1,6 @@
 # MAC Addresses
 
-!!! info "This feature was introduced in NetBox v4.2."
+:::info "This feature was introduced in NetBox v4.2."
 
 A MAC address object in NetBox comprises a single Ethernet link layer address, and represents a MAC address as reported by or assigned to a network interface. MAC addresses can be assigned to [device](../dcim/device.md) and [virtual machine](../virtualization/virtualmachine.md) interfaces. A MAC address can be specified as the primary MAC address for a given device or VM interface.
 

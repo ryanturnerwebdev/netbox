@@ -31,7 +31,7 @@ The type of power port.
 
 The maximum amount of power this port consumes (in watts).
 
-!!! info
+:::info
     When creating a power port on a device which is mapped to outlets and supplies power to downstream devices, the maximum and allocated draw numbers should be left blank. Utilization will be calculated by taking the sum of all power ports of devices connected downstream.
 
 ### Allocated Draw

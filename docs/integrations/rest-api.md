@@ -582,7 +582,7 @@ Each token contains a 160-bit key represented as 40 hexadecimal characters. When
 
 Additionally, a token can be set to expire at a specific time. This can be useful if an external client needs to be granted temporary access to NetBox.
 
-!!! info "Restricting Token Retrieval"
+:::info "Restricting Token Retrieval"
     The ability to retrieve the key value of a previously-created API token can be restricted by disabling the [`ALLOW_TOKEN_RETRIEVAL`](../configuration/security.md#allow_token_retrieval) configuration parameter.
 
 ### Restricting Write Operations

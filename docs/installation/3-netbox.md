@@ -226,7 +226,7 @@ For example, to enable the Amazon S3 backend, add `boto3` to your local requirem
 sudo sh -c "echo 'boto3' >> /opt/netbox/local_requirements.txt"
 ```
 
-!!! info
+:::info
     These packages were previously required in NetBox v3.5 but now are optional.
 
 ### Sentry Integration
@@ -237,7 +237,7 @@ NetBox may be configured to send error reports to [Sentry](../administration/err
 sudo sh -c "echo 'sentry-sdk' >> /opt/netbox/local_requirements.txt"
 ```
 
-!!! info
+:::info
     Sentry integration was previously included by default in NetBox v3.6 but is now optional.
 
 ## Run the Upgrade Script

@@ -116,7 +116,7 @@ class CircuitTable(TenancyColumnsMixin, ContactsColumnMixin, NetBoxTable):
 :::warning
     The `{% blocktrans %}` tag supports only **limited variable replacement**, comparable to the `format()` method on Python strings. It does not permit access to object attributes or the use of other template tags or filters inside it. Ensure that any necessary context is passed as simple variables.
 
-!!! info
+:::info
     The `{% trans %}` and `{% blocktrans %}` support the inclusion of contextual hints for translators using the `context` argument:
 
     ```nohighlight

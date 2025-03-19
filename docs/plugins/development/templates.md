@@ -207,7 +207,7 @@ This template is used by the `BulkDeleteView` generic view to delete multiple ob
 
 The following custom template tags are available in NetBox.
 
-!!! info
+:::info
     These are loaded automatically by the template backend: You do _not_ need to include a `{% load %}` tag in your template to activate them.
 
 ::: utilities.templatetags.builtins.tags.badge
@@ -222,7 +222,7 @@ The following custom template tags are available in NetBox.
 
 The following custom template filters are available in NetBox.
 
-!!! info
+:::info
     These are loaded automatically by the template backend: You do _not_ need to include a `{% load %}` tag in your template to activate them.
 
 ::: utilities.templatetags.builtins.filters.bettertitle

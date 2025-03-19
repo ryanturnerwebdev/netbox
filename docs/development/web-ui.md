@@ -115,7 +115,7 @@ In order for the TypeScript and Sass (SCSS) source files to be usable by a brows
 
 All output files will be written to `netbox/project-static/dist`, where Django will pick them up when `manage.py collectstatic` is run.
 
-!!! info "Remember to re-run `manage.py collectstatic`"
+:::info "Remember to re-run `manage.py collectstatic`"
     If you're running the development web server — `manage.py runserver` — you'll need to run `manage.py collectstatic` to see your changes.
 
 ### Linting, Formatting & Type Checking

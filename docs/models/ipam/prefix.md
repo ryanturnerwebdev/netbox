@@ -36,7 +36,7 @@ If selected, this prefix will report 100% utilization regardless of how many chi
 
 ### Scope
 
-!!! info "This field replaced the `site` field in NetBox v4.2."
+:::info "This field replaced the `site` field in NetBox v4.2."
 
 The [region](../dcim/region.md), [site](../dcim/site.md), [site group](../dcim/sitegroup.md) or [location](../dcim/location.md) to which the prefix is assigned (optional).
 

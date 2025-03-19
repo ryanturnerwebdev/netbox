@@ -160,7 +160,7 @@ These methods are detected and run automatically when the script is executed, un
 
 Calling any of these logging methods without a message will increment the relevant counter, but will not generate an output line in the script's log.
 
-!!! info
+:::info
     This functionality was ported from [legacy reports](./reports.md) in NetBox v4.0.
 
 ### Example
