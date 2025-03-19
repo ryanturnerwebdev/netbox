@@ -9,7 +9,7 @@ An IP address object in NetBox comprises a single host address (either IPv4 or I
 
 An IP address can be designated as the network address translation (NAT) inside IP address for exactly one other IP address. This is useful primarily to denote a translation between public and private IP addresses. This relationship is followed in both directions: For example, if 10.0.0.1 is assigned as the inside IP for 192.0.2.1, 192.0.2.1 will be displayed as the outside IP for 10.0.0.1.
 
-!!! note
+:::note
     NetBox does not currently support tracking application-level NAT relationships (also called _port address translation_ or PAT). This type of policy requires additional logic to model and cannot be fully represented by IP address alone.
 
 ## Fields
@@ -45,7 +45,7 @@ The functional role fulfilled by this IP address. Options include:
 
 The [Virtual Routing and Forwarding](./vrf.md) instance in which this IP address exists.
 
-!!! note
+:::note
     VRF assignment is optional. IP addresses with no VRF assigned are considered to exist in the "global" table.
 
 ### DNS Name

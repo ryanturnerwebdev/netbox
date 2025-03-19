@@ -6,7 +6,7 @@ Each export template is associated with a certain type of object. For instance, 
 
 Export templates must be written in [Jinja2](https://jinja.palletsprojects.com/).
 
-!!! note
+:::note
     The name `table` is reserved for internal use.
 
 !!! warning

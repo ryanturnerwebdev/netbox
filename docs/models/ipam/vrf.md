@@ -18,7 +18,7 @@ A route distinguisher is used to map routes to VRFs within a device's routing ta
 
 By default, NetBox will permit duplicate prefixes to be assigned to a VRF. This behavior can be toggled by setting the "enforce unique" flag on the VRF model.
 
-!!! note
+:::note
     Enforcement of unique IP space can be toggled for global table (non-VRF prefixes) using the `ENFORCE_GLOBAL_UNIQUE` configuration setting.
 
 ### Import & Export Targets

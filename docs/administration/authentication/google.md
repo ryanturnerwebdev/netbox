@@ -12,7 +12,7 @@ This guide explains how to configure single sign-on (SSO) support for NetBox usi
     - "Authorized redirect URIs" should follow the format `http[s]://<netbox>[:<port>]/oauth/complete/google-oauth2/`
 5. Copy the "Client ID" and "Client Secret" values somewhere convenient.
 
-!!! note
+:::note
     Google requires the NetBox hostname to use a public top-level-domain (e.g. `.com`, `.net`). The use of IP addresses is not permitted (except `127.0.0.1`).
 
 For more information, consult [Google's documentation](https://developers.google.com/identity/protocols/oauth2/web-server#prerequisites).

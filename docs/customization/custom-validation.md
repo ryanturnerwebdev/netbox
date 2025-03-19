@@ -149,5 +149,5 @@ CUSTOM_VALIDATORS = {
 }
 ```
 
-!!! note
+:::note
     Even if defining only a single validator, it must be passed as an iterable.

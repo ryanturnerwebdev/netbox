@@ -19,7 +19,7 @@ The prefix's operational status. Note that the status of a prefix does _not_ hav
 
 The [Virtual Routing and Forwarding](./vrf.md) instance in which this prefix exists.
 
-!!! note
+:::note
     VRF assignment is optional. Prefixes with no VRF assigned are considered to exist in the "global" table.
 
 ### Role

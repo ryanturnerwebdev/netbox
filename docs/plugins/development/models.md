@@ -19,7 +19,7 @@ class MyModel(models.Model):
 
 Every model includes by default a numeric primary key. This value is generated automatically by the database, and can be referenced as `pk` or `id`.
 
-!!! note
+:::note
     Model names should adhere to [PEP8](https://www.python.org/dev/peps/pep-0008/#class-names) standards and be CapWords (no underscores).  Using underscores in model names will result in problems with permissions.
 
 ## Enabling NetBox Features
@@ -84,11 +84,11 @@ class MyModel(ExportTemplatesMixin, TagsMixin, models.Model):
 
 Once you have completed defining the model(s) for your plugin, you'll need to create the database schema migrations. A migration file is essentially a set of instructions for manipulating the PostgreSQL database to support your new model, or to alter existing models. Creating migrations can usually be done automatically using Django's `makemigrations` management command. (Ensure that your plugin has been installed and enabled first, otherwise it won't be found.)
 
-!!! note Enable Developer Mode
+:::note Enable Developer Mode
     NetBox enforces a safeguard around the `makemigrations` command to protect regular users from inadvertently creating erroneous schema migrations. To enable this command for plugin development, set `DEVELOPER=True` in `configuration.py`.
 
 ```no-highlight
-$ ./manage.py makemigrations my_plugin 
+$ ./manage.py makemigrations my_plugin
 Migrations for 'my_plugin':
   /home/jstretch/animal_sounds/my_plugin/migrations/0001_initial.py
     - Create model MyModel
@@ -125,7 +125,7 @@ For more information about database migrations, see the [Django documentation](h
 
 ::: netbox.models.features.EventRulesMixin
 
-!!! note
+:::note
     `EventRulesMixin` was renamed from `WebhooksMixin` in NetBox v3.7.
 
 ::: netbox.models.features.ExportTemplatesMixin
@@ -148,7 +148,7 @@ To define choices for a model field, subclass `ChoiceSet` and define a tuple nam
 
 A complete example is provided below.
 
-!!! note
+:::note
     Authors may find it useful to declare each of the database values as constants on the class, and reference them within `CHOICES` members. This convention allows the values to be referenced from outside the class, however it is not strictly required.
 
 ### Dynamic Configuration

@@ -5,7 +5,7 @@ Interfaces in NetBox represent network interfaces used to exchange data with con
 !!! tip
     Like most device components, interfaces are instantiated automatically from [interface templates](./interfacetemplate.md) assigned to the selected device type when a device is created.
 
-!!! note
+:::note
     Although both devices and virtual machines both can have interfaces assigned, a separate model is used for each. Thus, device interfaces have some properties that are not present on virtual machine interfaces and vice versa.
 
 ## Fields
@@ -30,7 +30,7 @@ An alternative physical label identifying the interface.
 
 The type of interface. Interfaces may be physical or virtual in nature, but only physical interfaces may be connected via cables.
 
-!!! note
+:::note
     The interface type refers to the physical termination or port on the device. Interfaces which employ a removable optic or similar transceiver should be defined to represent the type of transceiver in use, irrespective of the physical termination to that transceiver.
 
 ### Speed
@@ -49,7 +49,7 @@ The [virtual routing and forwarding](../ipam/vrf.md) instance to which this inte
 
 The [MAC address](./macaddress.md) assigned to this interface which is designated as its primary.
 
-!!! note "Changed in NetBox v4.2"
+:::note "Changed in NetBox v4.2"
     The MAC address of an interface (formerly a concrete database field) is available as a property, `mac_address`, which reflects the value of the primary linked [MAC address](./macaddress.md) object.
 
 ### WWN
@@ -80,7 +80,7 @@ If selected, this component will be treated as if a cable has been connected.
 
 Virtual interfaces can be bound to a physical parent interface. This is helpful for modeling virtual interfaces which employ encapsulation on a physical interface, such as an 802.1Q VLAN-tagged subinterface.
 
-!!! note
+:::note
     An interface with one or more child interfaces assigned cannot be deleted until all its child interfaces have been deleted or reassigned.
 
 ### Bridged Interface

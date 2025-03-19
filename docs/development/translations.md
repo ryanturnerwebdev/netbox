@@ -16,7 +16,7 @@ To update the English `.po` file from which all translations are derived, use th
 
 Then, commit the change and push to the `main` branch on GitHub. Any new strings will appear for translation on Transifex automatically.
 
-!!! note
+:::note
     It is typically not necessary to update source strings manually, as this is done nightly by a [GitHub action](https://github.com/netbox-community/netbox/blob/main/.github/workflows/update-translation-strings.yml).
 
 ## Updating Translated Strings

@@ -376,7 +376,7 @@ curl -s -X GET http://netbox/api/ipam/ip-addresses/ | jq '.'
 
 To query NetBox for a single object, make a `GET` request to the model's _detail_ endpoint specifying its unique numeric ID.
 
-!!! note
+:::note
     Note that the trailing slash is required. Omitting this will return a 302 redirect.
 
 ```no-highlight
@@ -518,7 +518,7 @@ http://netbox/api/ipam/prefixes/18691/ \
 }
 ```
 
-!!! note "PUT versus PATCH"
+:::note "PUT versus PATCH"
     The NetBox REST API support the use of either `PUT` or `PATCH` to modify an existing object. The difference is that a `PUT` request requires the user to specify a _complete_ representation of the object being modified, whereas a `PATCH` request need include only the attributes that are being updated. For most purposes, using `PATCH` is recommended.
 
 ### Updating Multiple Objects
@@ -535,7 +535,7 @@ http://netbox/api/dcim/sites/ \
 
 Note that there is no requirement for the attributes to be identical among objects. For instance, it's possible to update the status of one site along with the name of another in the same request.
 
-!!! note
+:::note
     The bulk update of objects is an all-or-none operation, meaning that if NetBox fails to successfully update any of the specified objects (e.g. due a validation error), the entire operation will be aborted and none of the objects will be updated.
 
 ### Deleting an Object
@@ -550,7 +550,7 @@ http://netbox/api/ipam/prefixes/18691/
 
 Note that `DELETE` requests do not return any data: If successful, the API will return a 204 (No Content) response.
 
-!!! note
+:::note
     You can run `curl` with the verbose (`-v`) flag to inspect the HTTP response codes.
 
 ### Deleting Multiple Objects
@@ -565,7 +565,7 @@ http://netbox/api/dcim/sites/ \
 --data '[{"id": 10}, {"id": 11}, {"id": 12}]'
 ```
 
-!!! note
+:::note
     The bulk deletion of objects is an all-or-none operation, meaning that if NetBox fails to delete any of the specified objects (e.g. due a dependency by a related object), the entire operation will be aborted and none of the objects will be deleted.
 
 ## Authentication
@@ -627,7 +627,7 @@ $ curl https://netbox/api/dcim/sites/
 
 When a token is used to authenticate a request, its `last_updated` time updated to the current time if its last use was recorded more than 60 seconds ago (or was never recorded). This allows users to determine which tokens have been active recently.
 
-!!! note
+:::note
     The "last used" time for tokens will not be updated while maintenance mode is enabled.
 
 ### Initial Token Provisioning
@@ -690,5 +690,5 @@ The request ID can also be used to filter many objects directly, to return those
 GET /api/dcim/sites/?created_by_request=e39c84bc-f169-4d5f-bc1c-94487a1b18b5
 ```
 
-!!! note
+:::note
     This header is included with _all_ NetBox responses, although it is most practical when working with an API.

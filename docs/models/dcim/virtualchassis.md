@@ -4,7 +4,7 @@ A virtual chassis represents a set of devices which share a common control plane
 
 One of the member devices may be designated as the VC master: This device will typically be assigned a name, services, virtual interfaces, and other attributes related to managing the VC.  If a VC master is defined, interfaces from all VC members are displayed when navigating to its device interfaces view. This does not include management-only interfaces belonging to other members.
 
-!!! note
+:::note
     It's important to recognize the distinction between a virtual chassis and a chassis-based device. A virtual chassis is **not** suitable for modeling a chassis-based switch with removable line cards (such as the Juniper EX9208), as its line cards are _not_ physically autonomous devices. Instead, use [modules](./module.md) for these.
 
 ## Fields

@@ -24,7 +24,7 @@ Each aggregate is assigned to a [RIR](./rir.md). For "public" aggregates, this w
 
 Prefixes are automatically arranged beneath their parent aggregates in NetBox. Typically, you'll want to create aggregates only for the prefixes and IP addresses that your organization actually manages: There is no need to define aggregates for provider-assigned space which is only used on Internet circuits, for example.
 
-!!! note
+:::note
     Because aggregates represent segments of the global IP space, they cannot overlap with one another: They can only exist side-by-side. For instance, you cannot define both 10.0.0.0/8 and 10.16.0.0/16 as aggregates, because they overlap. 10.16.0.0/16 in this example would be created as a container prefix and automatically grouped under the 10.0.0.0/8 aggregate. Remember, the purpose of aggregates is to establish the root of your IP addressing hierarchy.
 
 ## Fields

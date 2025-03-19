@@ -46,7 +46,7 @@ If no body template is specified, the request body will be populated with a JSON
         "id": 19,
         "name": "Site 1",
         "slug": "site-1",
-        "status": 
+        "status":
             "value": "active",
             "label": "Active",
             "id": 1
@@ -68,7 +68,7 @@ If no body template is specified, the request body will be populated with a JSON
 }
 ```
 
-!!! note
+:::note
     The setting of conditional webhooks has been moved to [Event Rules](../features/event-rules.md) since NetBox 3.7
 
 ## Webhook Processing

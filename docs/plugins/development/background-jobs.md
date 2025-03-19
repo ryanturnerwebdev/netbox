@@ -89,7 +89,7 @@ class MyHousekeepingJob(JobRunner):
         MyModel.objects.filter(foo='bar').delete()
 ```
 
-!!! note
+:::note
     Ensure that any system jobs are imported on initialization. Otherwise, they won't be registered. This can be achieved by extending the PluginConfig's `ready()` method. For example:
 
     ```python
@@ -125,7 +125,7 @@ The `PluginConfig` above creates two custom queues with the following names `my_
 
 !!! warning "Configuring the RQ worker process"
     By default, NetBox's RQ worker process only services the high, default, and low queues. Plugins which introduce custom queues should advise users to either reconfigure the default worker, or run a dedicated worker specifying the necessary queues. For example:
-    
+
     ```
     python manage.py rqworker my_plugin.foo my_plugin.bar
     ```

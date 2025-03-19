@@ -41,7 +41,7 @@ sudo tar -xzf vX.Y.Z.tar.gz -C /opt
 sudo ln -s /opt/netbox-X.Y.Z/ /opt/netbox
 ```
 
-!!! note
+:::note
     It is recommended to install NetBox in a directory named for its version number. For example, NetBox v3.0.0 would be installed into `/opt/netbox-3.0.0`, and a symlink from `/opt/netbox/` would point to this location. (You can verify this configuration with the command `ls -l /opt | grep netbox`.) This allows for future releases to be installed in parallel without interrupting the current installation. When changing to the new release, only the symlink needs to be updated.
 
 ### Option B: Clone the Git Repository
@@ -263,7 +263,7 @@ Note that **Python 3.10 or later is required** for NetBox v4.0 and later release
 sudo PYTHON=/usr/bin/python3.10 /opt/netbox/upgrade.sh
 ```
 
-!!! note
+:::note
     Upon completion, the upgrade script may warn that no existing virtual environment was detected. As this is a new installation, this warning can be safely ignored.
 
 ## Create a Super User
@@ -321,7 +321,7 @@ Quit the server with CONTROL-C.
 
 Next, connect to the name or IP of the server (as defined in `ALLOWED_HOSTS`) on port 8000; for example, http://127.0.0.1:8000/. You should be greeted with the NetBox home page. Try logging in using the username and password specified when creating a superuser.
 
-!!! note
+:::note
     By default RHEL based distros will likely block your testing attempts with firewalld. The development server port can be opened with `firewall-cmd` (add `--permanent` if you want the rule to survive server restarts):
 
     ```no-highlight

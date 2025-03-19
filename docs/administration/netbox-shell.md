@@ -105,7 +105,7 @@ This approach can span multiple levels of relations. For example, the following 
 >>> IPAddress.objects.filter(interface__device__site__region__slug="north-america")
 ```
 
-!!! note
+:::note
     While the above query is functional, it's not very efficient. There are ways to optimize such requests, however they are out of scope for this document. For more information, see the [Django queryset method reference](https://docs.djangoproject.com/en/stable/ref/models/querysets/) documentation.
 
 Reverse relationships can be traversed as well. For example, the following will find all devices with an interface named "em0":

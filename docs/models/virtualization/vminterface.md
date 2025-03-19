@@ -16,7 +16,7 @@ The interface's name. Must be unique to the assigned VM.
 
 Identifies the parent interface of a subinterface (e.g. used to employ encapsulation).
 
-!!! note
+:::note
     An interface with one or more child interfaces assigned cannot be deleted until all its child interfaces have been deleted or reassigned.
 
 ### Bridged Interface
@@ -31,7 +31,7 @@ If not selected, this interface will be treated as disabled/inoperative.
 
 The [MAC address](../dcim/macaddress.md) assigned to this interface which is designated as its primary.
 
-!!! note "Changed in NetBox v4.2"
+:::note "Changed in NetBox v4.2"
     The MAC address of an interface (formerly a concrete database field) is available as a property, `mac_address`, which reflects the value of the primary linked [MAC address](../dcim/macaddress.md) object.
 
 ### MTU

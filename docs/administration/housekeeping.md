@@ -19,7 +19,7 @@ This script can be linked from your cron scheduler's daily jobs directory (e.g. 
 sudo ln -s /opt/netbox/contrib/netbox-housekeeping.sh /etc/cron.daily/netbox-housekeeping
 ```
 
-!!! note
+:::note
     On Debian-based systems, be sure to omit the `.sh` file extension when linking to the script from within a cron directory. Otherwise, the task may not run.
 
 ### Using Systemd

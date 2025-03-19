@@ -185,7 +185,7 @@ class MyView(generic.ObjectView):
         )
 ```
 
-!!! note "Changed in NetBox v4.2"
+:::note "Changed in NetBox v4.2"
     The `register_model_view()` function was extended in NetBox v4.2 to support registration of list views by passing `detail=False`.
 
 ::: utilities.views.register_model_view

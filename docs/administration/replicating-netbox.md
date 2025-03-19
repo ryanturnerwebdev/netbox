@@ -4,7 +4,7 @@
 
 NetBox employs a [PostgreSQL](https://www.postgresql.org/) database, so general PostgreSQL best practices apply here. The database can be written to a file and restored using the `pg_dump` and `psql` utilities, respectively.
 
-!!! note
+:::note
     The examples below assume that your database is named `netbox`.
 
 ### Export the Database
@@ -15,7 +15,7 @@ Use the `pg_dump` utility to export the entire database to a file:
 pg_dump --username netbox --password --host localhost netbox > netbox.sql
 ```
 
-!!! note
+:::note
     You may need to change the username, host, and/or database in the command above to match your installation.
 
 When replicating a production database for development purposes, you may find it convenient to exclude changelog data, which can easily account for the bulk of a database's size. To do this, exclude the `extras_objectchange` table data from the export. The table will still be included in the output file, but will not be populated with any data.
@@ -53,7 +53,7 @@ pg_dump --username netbox --password --host localhost -s netbox > netbox_schema.
 
 By default, NetBox stores uploaded files (such as image attachments) in its media directory. To fully replicate an instance of NetBox, you'll need to copy both the database and the media files.
 
-!!! note
+:::note
     These operations are not necessary if your installation is utilizing a [remote storage backend](../configuration/system.md#storage_backend).
 
 ### Archive the Media Directory

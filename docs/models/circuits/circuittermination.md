@@ -4,7 +4,7 @@ Each circuit may have up to two terminations, designated A and Z. At either term
 
 In adherence with NetBox's philosophy of closely modeling the real world, a circuit may be connected only to a physical interface. For example, circuits may not terminate to LAG interfaces, which are virtual in nature. In such cases, a separate physical circuit is associated with each LAG member interface and each needs to be modeled discretely.
 
-!!! note
+:::note
     A circuit in NetBox represents a physical link, and cannot have more than two endpoints. When modeling a multi-point topology, each leg of the topology must be defined as a discrete circuit, with one end terminating within the provider's infrastructure. The provider network model is ideal for representing these networks.
 
 ## Fields

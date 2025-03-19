@@ -71,7 +71,7 @@ This is not a comprehensive list, but should suffice for the initial data import
 
 The graphs below illustrate some of the core dependencies among different models in NetBox for your reference.
 
-!!! note "Self-Nesting Models"
+:::note "Self-Nesting Models"
     Each model in the graphs below which show a looping arrow pointing back to itself can be nested in a recursive hierarchy. For example, you can have regions representing both countries and cities, with the latter nested underneath the former.
 
 ### Tenancy

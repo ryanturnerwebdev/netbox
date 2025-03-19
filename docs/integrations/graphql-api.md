@@ -37,7 +37,7 @@ The response will include the requested data formatted as JSON:
 }
 ```
 
-!!! note
+:::note
     It's recommended to pass the return data through a JSON parser such as `jq` for better readability.
 
 NetBox provides both a singular and plural query field for each object type:

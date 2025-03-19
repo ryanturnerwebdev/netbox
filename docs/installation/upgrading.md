@@ -122,7 +122,7 @@ This script performs the following actions:
 * Deletes stale content types from the database
 * Deletes all expired user sessions from the database
 
-!!! note
+:::note
     If the upgrade script prompts a warning about unreflected database migrations, this indicates that some change has
     been made to your local codebase and should be investigated. Never attempt to create new migrations unless you are
     intentionally modifying the database schema.

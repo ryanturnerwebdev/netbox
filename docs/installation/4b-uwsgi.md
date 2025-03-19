@@ -78,7 +78,7 @@ You should see output similar to the following:
 ...
 ```
 
-!!! note
+:::note
     If the NetBox service fails to start, issue the command `journalctl -eu netbox` to check for log messages that may indicate the problem.
 
 Once you've verified that the WSGI workers are up and running, move on to HTTP server setup.

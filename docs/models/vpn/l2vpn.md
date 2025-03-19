@@ -30,7 +30,7 @@ The technology employed in forming and operating the L2VPN. Choices include:
 * PBB-EVPN
 * EVPN-VPWS
 
-!!! note
+:::note
     Designating the type as VPWS, EPL, EP-LAN, EP-TREE will limit the L2VPN instance to two terminations.
 
 ### Identifier

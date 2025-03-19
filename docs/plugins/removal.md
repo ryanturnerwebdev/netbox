@@ -43,7 +43,7 @@ Restart the WSGI service:
 
 ## Drop Database Tables
 
-!!! note
+:::note
     This step is necessary only for plugins which have created one or more database tables (generally through the introduction of new models). Check your plugin's documentation if unsure.
 
 Enter the PostgreSQL database shell (`manage.py dbshell`) to determine if the plugin has created any SQL tables. Substitute `pluginname` in the example below for the name of the plugin being removed. (You can also run the `\dt` command without a pattern to list _all_ tables.)

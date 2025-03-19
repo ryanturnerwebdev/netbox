@@ -58,7 +58,7 @@ If True, cross-origin resource sharing (CORS) requests will be accepted from all
 ## CORS_ORIGIN_REGEX_WHITELIST
 
 These settings specify a list of origins that are authorized to make cross-site API requests. Use
-`CORS_ORIGIN_WHITELIST` to define a list of exact hostnames, or `CORS_ORIGIN_REGEX_WHITELIST` to define a set of regular 
+`CORS_ORIGIN_WHITELIST` to define a list of exact hostnames, or `CORS_ORIGIN_REGEX_WHITELIST` to define a set of regular
 expressions. (These settings have no effect if `CORS_ORIGIN_ALLOW_ALL` is True.) For example:
 
 ```python
@@ -152,7 +152,7 @@ To exempt _all_ models from view permission enforcement, set the following. (Not
 EXEMPT_VIEW_PERMISSIONS = ['*']
 ```
 
-!!! note
+:::note
     Using a wildcard will not affect certain potentially sensitive models, such as user permissions. If there is a need to exempt these models, they must be specified individually.
 
 ---

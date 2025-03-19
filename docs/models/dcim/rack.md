@@ -47,5 +47,5 @@ The unique physical serial number assigned to this rack.
 
 A unique, locally-administered label used to identify hardware resources.
 
-!!! note
+:::note
     Some additional fields pertaining to physical attributes such as height and weight can also be defined on each rack, but should generally be defined instead on the [rack type](./racktype.md).

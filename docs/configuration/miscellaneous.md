@@ -45,7 +45,7 @@ Sets content for the top banner in the user interface.
 
 !!! tip
     If you'd like the top and bottom banners to match, set the following:
-    
+
     ```python
     BANNER_TOP = 'Your banner text'
     BANNER_BOTTOM = BANNER_TOP
@@ -83,7 +83,7 @@ Default: True
 
 If enabled, a change log record will not be created when an object is updated without any changes to its existing field values.
 
-!!! note
+:::note
     The object's `last_updated` field will always reflect the time of the most recent update, regardless of this parameter.
 
 ---
@@ -207,7 +207,7 @@ Default: None (disabled)
 
 This parameter defines the URL of the repository that will be checked for new NetBox releases. When a new release is detected, a message will be displayed to administrative users on the home page. This can be set to the official repository (`'https://api.github.com/repos/netbox-community/netbox/releases'`) or a custom fork. Set this to `None` to disable automatic update checks.
 
-!!! note
+:::note
     The URL provided **must** be compatible with the [GitHub REST API](https://docs.github.com/en/rest).
 
 ---

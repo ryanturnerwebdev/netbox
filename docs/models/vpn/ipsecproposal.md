@@ -12,14 +12,14 @@ The unique user-assigned name for the proposal.
 
 The protocol employed for data encryption. Options include DES, 3DES, and various flavors of AES.
 
-!!! note
+:::note
     If an encryption algorithm is not specified, an authentication algorithm must be specified.
 
 ### Authentication Algorithm
 
 The mechanism employed to ensure data integrity. Options include MD5 and SHA HMAC implementations.
 
-!!! note
+:::note
     If an authentication algorithm is not specified, an encryption algorithm must be specified.
 
 ### SA Lifetime (Seconds)

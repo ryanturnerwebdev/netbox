@@ -18,7 +18,7 @@ The functional role of the attached interface. The following options are availab
 | Hub   | A central point in a hub-and-spoke topology      |
 | Spoke | An edge point in a hub-and-spoke topology        |
 
-!!! note
+:::note
     Multiple hub terminations may be attached to a tunnel.
 
 ### Termination

@@ -36,7 +36,7 @@ If selected, this will force the link to open in a new browser tab or window.
 
 Jinja2 template code for rendering the button text. (Note that this does not _need_ to contain any template variables.) See below for available context data.
 
-!!! note
+:::note
     Custom links which render an empty text value will not be displayed in the UI. This can be used to toggle the inclusion of a link based on object attributes.
 
 ### Link URL

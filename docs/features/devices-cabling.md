@@ -52,7 +52,7 @@ For example, a Juniper EX4300-48T device type might have the following component
 
 Once component templates have been created, every new device that you create as an instance of this type will automatically be assigned each of the components listed above.
 
-!!! note "Component Instantiation is not Retroactive"
+:::note "Component Instantiation is not Retroactive"
     The instantiation of components from a device type definition occurs only at the time of device creation. If you modify the components assigned to a device type, it will not affect devices which have already been created. This guards against any inadvertent changes to existing devices. However, you always have the option of adding, modifying, or deleting components on existing devices. (These changes can easily be applied to multiple devices at once using the bulk operations available in the UI.)
 
 ## Devices

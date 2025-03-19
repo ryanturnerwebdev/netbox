@@ -2,7 +2,7 @@
 
 An [Internet Key Exhcnage (IKE)](https://en.wikipedia.org/wiki/Internet_Key_Exchange) proposal defines a set of parameters used to establish a secure bidirectional connection across an untrusted medium, such as the Internet. IKE proposals defined in NetBox can be referenced by [IKE policies](./ikepolicy.md), which are in turn employed by [IPSec profiles](./ipsecprofile.md).
 
-!!! note
+:::note
     Some platforms refer to IKE proposals as [ISAKMP](https://en.wikipedia.org/wiki/Internet_Security_Association_and_Key_Management_Protocol), which is a framework for authentication and key exchange which employs IKE.
 
 ## Fields

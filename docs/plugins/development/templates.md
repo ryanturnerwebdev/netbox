@@ -19,7 +19,7 @@ The following template blocks are available on all templates.
 | `footer_links` | -        | Links section of the page footer                                    |
 | `javascript`   | -        | Javascript content included at the end of the HTML `<body>` element |
 
-!!! note
+:::note
     For more information on how template blocks work, consult the [Django documentation](https://docs.djangoproject.com/en/stable/ref/templates/builtins/#block).
 
 ## Base Templates
@@ -56,7 +56,7 @@ An example of a plugin template which extends `layout.html` is included below.
 
 The first line of the template instructs Django to extend the NetBox base template, and the `block` sections inject our custom content within its `header` and `content` blocks.
 
-!!! note
+:::note
     Django renders templates with its own custom [template language](https://docs.djangoproject.com/en/stable/topics/templates/#the-django-template-language). This is very similar to Jinja2, however there are some important distinctions of which authors should be aware. Be sure to familiarize yourself with Django's template language before attempting to create new templates.
 
 ## Generic View Templates

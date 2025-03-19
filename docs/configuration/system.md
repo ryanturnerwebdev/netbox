@@ -43,7 +43,7 @@ In order to send email, NetBox needs an email server configured. The following i
 * `TIMEOUT` - Amount of time to wait for a connection, in seconds (default: `10`)
 * `FROM_EMAIL` - Sender address for emails sent by NetBox
 
-!!! note
+:::note
     The `USE_SSL` and `USE_TLS` parameters are mutually exclusive.
 
 Email is sent from NetBox only for critical events or if configured for [logging](#logging). If you would like to test the email server configuration, Django provides a convenient [send_mail()](https://docs.djangoproject.com/en/stable/topics/email/#send-mail) function accessible within the NetBox shell:
@@ -93,7 +93,7 @@ Default: False
 
 Set this configuration parameter to True for NetBox deployments which do not have Internet access. This will disable miscellaneous functionality which depends on access to the Internet.
 
-!!! note
+:::note
     If Internet access is available via a proxy, set [`HTTP_PROXIES`](#http_proxies) instead.
 
 ---
@@ -180,7 +180,7 @@ The file path to the location where [custom scripts](../customization/custom-scr
 
 Default: `'netbox.search.backends.CachedValueSearchBackend'`
 
-The dotted path to the desired search backend class. `CachedValueSearchBackend` is currently the only search backend provided in NetBox, however this setting can be used to enable a custom backend. 
+The dotted path to the desired search backend class. `CachedValueSearchBackend` is currently the only search backend provided in NetBox, however this setting can be used to enable a custom backend.
 
 ---
 

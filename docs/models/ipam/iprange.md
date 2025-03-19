@@ -8,14 +8,14 @@ This model represents an arbitrary range of individual IPv4 or IPv6 addresses, i
 
 The [Virtual Routing and Forwarding](./vrf.md) instance in which this IP range exists.
 
-!!! note
+:::note
     VRF assignment is optional. IP ranges with no VRF assigned are considered to exist in the "global" table.
 
 ### Start & End Address
 
 The beginning and ending IP addresses (inclusive) which define the boundaries of the range. Both IP addresses must specify the correct mask.
 
-!!! note
+:::note
     The maximum supported size of an IP range is 2^32 - 1.
 
 ### Role
